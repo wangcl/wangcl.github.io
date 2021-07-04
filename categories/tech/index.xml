@@ -6,7 +6,19 @@
     <description>Recent content in Tech on wangcl&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wangcl.me/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wangcl.me/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCode Java</title>
+      <link>https://wangcl.me/p/vscode-java/</link>
+      <pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wangcl.me/p/vscode-java/</guid>
+      <description>How to develop Java programs in VS Code Pre-Requisites you should have these software installed:
+ VS Code Java Development Kit (JDK)  Install the Java Extension Pack which contains extensions:
+ Language Support for Java by Red Hat Debugger for Java Java Test Runner Maven for Java Project Manager for Java Visual Studio IntelliCode  Configure JDK there are 2 configurations: java.home and java.configuration.runtimes.
+The former specifies your language server&amp;rsquo;s execution environment; the latter specifies options for your project&amp;rsquo;s execution environment.</description>
+    </item>
+    
     <item>
       <title>Markdown Syntax Guide</title>
       <link>https://wangcl.me/p/markdown-syntax-guide/</link>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on wangcl&#39;s blog</title>
-    <link>https://wangcl.me/post/</link>
-    <description>Recent content in Posts on wangcl&#39;s blog</description>
+    <title>vscode on wangcl&#39;s blog</title>
+    <link>https://wangcl.me/tags/vscode/</link>
+    <description>Recent content in vscode on wangcl&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wangcl.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wangcl.me/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VSCode Java</title>
       <link>https://wangcl.me/p/vscode-java/</link>
@@ -17,15 +17,6 @@
  VS Code Java Development Kit (JDK)  Install the Java Extension Pack which contains extensions:
  Language Support for Java by Red Hat Debugger for Java Java Test Runner Maven for Java Project Manager for Java Visual Studio IntelliCode  Configure JDK there are 2 configurations: java.home and java.configuration.runtimes.
 The former specifies your language server&amp;rsquo;s execution environment; the latter specifies options for your project&amp;rsquo;s execution environment.</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://wangcl.me/p/markdown-syntax-guide/</link>
-      <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://wangcl.me/p/markdown-syntax-guide/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
   </channel>

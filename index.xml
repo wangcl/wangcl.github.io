@@ -6,7 +6,81 @@
         <description>Recent content on wangcl&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 27 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wangcl.me/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 04 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wangcl.me/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>VSCode Java</title>
+        <link>https://wangcl.me/p/vscode-java/</link>
+        <pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://wangcl.me/p/vscode-java/</guid>
+        <description>&lt;h1 id=&#34;how-to-develop-java-programs-in-vs-code&#34;&gt;How to develop Java programs in VS Code&lt;/h1&gt;
+&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-Requisites&lt;/h2&gt;
+&lt;p&gt;you should have these software installed:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;VS Code&lt;/li&gt;
+&lt;li&gt;Java Development Kit (JDK)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;install-the-java-extension-pack&#34;&gt;Install the Java Extension Pack&lt;/h2&gt;
+&lt;p&gt;which contains extensions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Language Support for Java by Red Hat&lt;/li&gt;
+&lt;li&gt;Debugger for Java&lt;/li&gt;
+&lt;li&gt;Java Test Runner&lt;/li&gt;
+&lt;li&gt;Maven for Java&lt;/li&gt;
+&lt;li&gt;Project Manager for Java&lt;/li&gt;
+&lt;li&gt;Visual Studio IntelliCode&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;configure-jdk&#34;&gt;Configure JDK&lt;/h2&gt;
+&lt;p&gt;there are 2 configurations: &lt;code&gt;java.home&lt;/code&gt; and &lt;code&gt;java.configuration.runtimes&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The former specifies your language server&amp;rsquo;s execution environment; the latter specifies options for your project&amp;rsquo;s execution environment.&lt;/p&gt;
+&lt;p&gt;Command Palette (Ctrl + Shift + P), run:&lt;/p&gt;
+&lt;p&gt;​	&lt;code&gt;java: configure java runtime&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;java.home&lt;/p&gt;
+&lt;p&gt;settings -&amp;gt; user settings -&amp;gt; java.home&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;java.configuration.runtimes&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;java.configuration.runtimes&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;JavaSE-1.8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/local/jdk1.8.0_201&amp;#34;&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+  &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;JavaSE-11&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/local/jdk-11.0.3&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;sources&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/local/jdk-11.0.3/lib/src.zip&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;javadoc&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://docs.oracle.com/en/java/javase/11/docs/api&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;  &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
+   &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+   &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;JavaSE-12&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/local/jdk-12.0.2&amp;#34;&lt;/span&gt;
+   &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+   &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;JavaSE-13&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/usr/local/jdk-13&amp;#34;&lt;/span&gt;
+   &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;library-configuration&#34;&gt;Library Configuration&lt;/h2&gt;
+&lt;p&gt;config through &lt;code&gt;java.project.referencedLibaries&lt;/code&gt; in &lt;code&gt;settings.json&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;java.project.referencedLibraries&amp;#34;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;include&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+        &lt;span class=&#34;s2&#34;&gt;&amp;#34;library/**/*.jar&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+        &lt;span class=&#34;s2&#34;&gt;&amp;#34;/home/username/lib/foo.jar&amp;#34;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;exclude&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+        &lt;span class=&#34;s2&#34;&gt;&amp;#34;library/sources/**&amp;#34;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+    &lt;span class=&#34;nt&#34;&gt;&amp;#34;sources&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+        &lt;span class=&#34;nt&#34;&gt;&amp;#34;library/bar.jar&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;library/sources/bar-src.jar&amp;#34;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
         <title>Markdown Syntax Guide</title>
         <link>https://wangcl.me/p/markdown-syntax-guide/</link>
         <pubDate>Sun, 27 Jun 2021 00:00:00 +0000</pubDate>
