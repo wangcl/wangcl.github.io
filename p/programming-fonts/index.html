@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='some commonly used programming fonts.'><title>Programming Fonts</title>
+
+<link rel='canonical' href='https://wangcl.me/p/programming-fonts/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Programming Fonts'>
+<meta property='og:description' content='some commonly used programming fonts.'>
+<meta property='og:url' content='https://wangcl.me/p/programming-fonts/'>
+<meta property='og:site_name' content='wangcl&#39;s blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='font' /><meta property='article:published_time' content='2021-09-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-09-25T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Programming Fonts">
+<meta name="twitter:description" content="some commonly used programming fonts.">
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://wangcl.me" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/tech/" style="background-color: #2a9d8f; color: #fff;">
+                Tech
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/programming-fonts/">Programming Fonts</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        some commonly used programming fonts.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Sep 25, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h1 id="programming-fonts">Programming Fonts</h1>
+<p>我对于编程字体关注的几个点：</p>
+<ol>
+<li>
+<p>等宽</p>
+<p>必需。</p>
+<p>以下字体均为等宽字体。</p>
+</li>
+<li>
+<p>易混淆字符的区分</p>
+<p>必需。</p>
+<p>例如：</p>
+<p>数字 1 和 小写字母 i、l、大写字母 I、L</p>
+<p>数字 0 和 小写字母 a、o、大写字母 O</p>
+</li>
+<li>
+<p>支持 ligatures</p>
+<p>可选。</p>
+<p>旧字体不支持，近年出的字体一般都已经支持了。</p>
+</li>
+</ol>
+<p>其他常见的关注点：</p>
+<ol>
+<li>
+<p>英文字符 1/2 宽度</p>
+<p>中英文混排时一个中文宽度 == 两个英文宽度</p>
+</li>
+<li>
+<p>支持 powerline</p>
+<p>vim 的 statusline plugin</p>
+</li>
+</ol>
+<h2 id="anonymous-pro">Anonymous Pro</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>比较古老的一款字体</p>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>字符的装饰过多</li>
+<li>不支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>作为某些旧系统下的选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 115; flex-basis: 278px">
+		<a href="/p/programming-fonts/fonts/anonymous-pro.PNG" data-size="672x580"><img src="/p/programming-fonts/fonts/anonymous-pro.PNG"
+				srcset="/p/programming-fonts/fonts/anonymous-pro_hu51a7cd30849c55aa161691741439de42_25368_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/anonymous-pro_hu51a7cd30849c55aa161691741439de42_25368_1024x0_resize_box_3.PNG 1024w"
+				width="672"
+				height="580"
+				loading="lazy"
+				alt="anonymous pro">
+		</a>
+		
+		<figcaption>anonymous pro</figcaption>
+		
+	</figure></p>
+<h2 id="cascadia-code">Cascadia Code</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>Microsoft 在 Consolas 之后的新编程字体</p>
+</li>
+<li>
+<p>优点</p>
+<ol>
+<li>持续更新中</li>
+<li>支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>小写字母 a 很有特点，但不太喜欢</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>常用选择之一</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 103; flex-basis: 248px">
+		<a href="/p/programming-fonts/fonts/cascadia-code.PNG" data-size="709x686"><img src="/p/programming-fonts/fonts/cascadia-code.PNG"
+				srcset="/p/programming-fonts/fonts/cascadia-code_hued7b431edc30bb5c54a12facbc9df3a1_29993_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/cascadia-code_hued7b431edc30bb5c54a12facbc9df3a1_29993_1024x0_resize_box_3.PNG 1024w"
+				width="709"
+				height="686"
+				loading="lazy"
+				alt="cascadia code">
+		</a>
+		
+		<figcaption>cascadia code</figcaption>
+		
+	</figure></p>
+<h2 id="consolas">Consolas</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>Microsoft 在 windows 操作系统中自带的编程字体。</p>
+</li>
+<li>
+<p>问题：</p>
+<ol>
+<li>不支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>操作系统自带，作为默认字体</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 99; flex-basis: 239px">
+		<a href="/p/programming-fonts/fonts/consolas.PNG" data-size="671x672"><img src="/p/programming-fonts/fonts/consolas.PNG"
+				srcset="/p/programming-fonts/fonts/consolas_hu3145da257b70046431e74d22678d3f70_26368_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/consolas_hu3145da257b70046431e74d22678d3f70_26368_1024x0_resize_box_3.PNG 1024w"
+				width="671"
+				height="672"
+				loading="lazy"
+				alt="consolas">
+		</a>
+		
+		<figcaption>consolas</figcaption>
+		
+	</figure></p>
+<h2 id="consolas-with-yahei">Consolas with Yahei</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>一款 Consolas 和微软雅黑的混合字体，比常见的 Consolas-Yahei-hybrid 字体适配得更好。</p>
+</li>
+<li>
+<p>优点</p>
+<ol>
+<li>中英混合字体，在一些环境受限且需要中英混排的场景中非常有用</li>
+<li>2英文宽度 = 1中文宽度</li>
+</ol>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>不支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>根据场景使用</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 91; flex-basis: 219px">
+		<a href="/p/programming-fonts/fonts/consolas-with-yahei.PNG" data-size="674x736"><img src="/p/programming-fonts/fonts/consolas-with-yahei.PNG"
+				srcset="/p/programming-fonts/fonts/consolas-with-yahei_hufcbf2dbce35910e7481c401cd69ad237_27807_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/consolas-with-yahei_hufcbf2dbce35910e7481c401cd69ad237_27807_1024x0_resize_box_3.PNG 1024w"
+				width="674"
+				height="736"
+				loading="lazy"
+				alt="consolas with yahei">
+		</a>
+		
+		<figcaption>consolas with yahei</figcaption>
+		
+	</figure></p>
+<h2 id="droid-sans-mono">Droid Sans Mono</h2>
+<ul>
+<li>
+<p>问题</p>
+<ol>
+<li>不支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>很少使用</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 109; flex-basis: 261px">
+		<a href="/p/programming-fonts/fonts/droid-sans-mono.PNG" data-size="747x685"><img src="/p/programming-fonts/fonts/droid-sans-mono.PNG"
+				srcset="/p/programming-fonts/fonts/droid-sans-mono_hu03719b1d3c7ff8b6deed0ebeb6b682ee_63384_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/droid-sans-mono_hu03719b1d3c7ff8b6deed0ebeb6b682ee_63384_1024x0_resize_box_3.PNG 1024w"
+				width="747"
+				height="685"
+				loading="lazy"
+				alt="droid sans mono">
+		</a>
+		
+		<figcaption>droid sans mono</figcaption>
+		
+	</figure></p>
+<h2 id="fantasque-sans-mono">Fantasque Sans Mono</h2>
+<ul>
+<li>
+<p>优点</p>
+<ol>
+<li>支持 ligatures</li>
+<li>字体有手写的感觉，比较生动</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>轮换选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 105; flex-basis: 253px">
+		<a href="/p/programming-fonts/fonts/fantasque-sans-mono.PNG" data-size="651x617"><img src="/p/programming-fonts/fonts/fantasque-sans-mono.PNG"
+				srcset="/p/programming-fonts/fonts/fantasque-sans-mono_hu286e2aeb8f4f6dacc8283ab7bc72e71b_28620_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/fantasque-sans-mono_hu286e2aeb8f4f6dacc8283ab7bc72e71b_28620_1024x0_resize_box_3.PNG 1024w"
+				width="651"
+				height="617"
+				loading="lazy"
+				alt="fantasque sans mono">
+		</a>
+		
+		<figcaption>fantasque sans mono</figcaption>
+		
+	</figure></p>
+<h2 id="fira-code">Fira Code</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>基于 Mozilla 的 Fira Mono，很全面的编程字体。</p>
+</li>
+<li>
+<p>优点</p>
+<ol>
+<li>小写字母 r 非常锐利，令人印象深刻</li>
+<li>支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>主力选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 105; flex-basis: 252px">
+		<a href="/p/programming-fonts/fonts/fira-code.PNG" data-size="743x706"><img src="/p/programming-fonts/fonts/fira-code.PNG"
+				srcset="/p/programming-fonts/fonts/fira-code_huc827695629bd61f61e62cc2851129975_64759_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/fira-code_huc827695629bd61f61e62cc2851129975_64759_1024x0_resize_box_3.PNG 1024w"
+				width="743"
+				height="706"
+				loading="lazy"
+				alt="fira code">
+		</a>
+		
+		<figcaption>fira code</figcaption>
+		
+	</figure></p>
+<h2 id="hack">Hack</h2>
+<ul>
+<li>
+<p>问题</p>
+<ol>
+<li>不支持 ligatures</li>
+<li>左右中括号和大括号的高度对齐似乎不太一致</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>偶尔选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 107; flex-basis: 258px">
+		<a href="/p/programming-fonts/fonts/hack.PNG" data-size="729x676"><img src="/p/programming-fonts/fonts/hack.PNG"
+				srcset="/p/programming-fonts/fonts/hack_hu04508700afe97e18db2eb2d9c927e8a3_29214_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/hack_hu04508700afe97e18db2eb2d9c927e8a3_29214_1024x0_resize_box_3.PNG 1024w"
+				width="729"
+				height="676"
+				loading="lazy"
+				alt="hack">
+		</a>
+		
+		<figcaption>hack</figcaption>
+		
+	</figure></p>
+<h2 id="hasklig">Hasklig</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>Adobe 的 Source Code Pro 的变体</p>
+</li>
+<li>
+<p>优点</p>
+<ol>
+<li>支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>常用选择之一</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 106; flex-basis: 254px">
+		<a href="/p/programming-fonts/fonts/hasklig.PNG" data-size="732x690"><img src="/p/programming-fonts/fonts/hasklig.PNG"
+				srcset="/p/programming-fonts/fonts/hasklig_huf996a80f021f2f66852fee287cc47d34_29370_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/hasklig_huf996a80f021f2f66852fee287cc47d34_29370_1024x0_resize_box_3.PNG 1024w"
+				width="732"
+				height="690"
+				loading="lazy"
+				alt="hasklig">
+		</a>
+		
+		<figcaption>hasklig</figcaption>
+		
+	</figure></p>
+<h2 id="hermit">Hermit</h2>
+<ul>
+<li>
+<p>优点</p>
+<ol>
+<li>小写字母非常另类</li>
+</ol>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>不支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>偶尔选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 94; flex-basis: 227px">
+		<a href="/p/programming-fonts/fonts/hermit.PNG" data-size="734x776"><img src="/p/programming-fonts/fonts/hermit.PNG"
+				srcset="/p/programming-fonts/fonts/hermit_hu08ee38bd58061e5e2f145cf84094c5ef_30092_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/hermit_hu08ee38bd58061e5e2f145cf84094c5ef_30092_1024x0_resize_box_3.PNG 1024w"
+				width="734"
+				height="776"
+				loading="lazy"
+				alt="hermit">
+		</a>
+		
+		<figcaption>hermit</figcaption>
+		
+	</figure></p>
+<h2 id="ibm-plex-mono">IBM Plex Mono</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>IBM 出品。</p>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>不支持 ligatures</li>
+<li>小写字母 f 下边的横线感觉不好看</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>很少使用</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 104; flex-basis: 250px">
+		<a href="/p/programming-fonts/fonts/ibm-plex-mono.PNG" data-size="744x712"><img src="/p/programming-fonts/fonts/ibm-plex-mono.PNG"
+				srcset="/p/programming-fonts/fonts/ibm-plex-mono_hub3510b4431babfd2cc71008e7f0a48f6_28850_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/ibm-plex-mono_hub3510b4431babfd2cc71008e7f0a48f6_28850_1024x0_resize_box_3.PNG 1024w"
+				width="744"
+				height="712"
+				loading="lazy"
+				alt="ibm plex mono">
+		</a>
+		
+		<figcaption>ibm plex mono</figcaption>
+		
+	</figure></p>
+<h2 id="inconsolata">Inconsolata</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>跟 Consolas 风格接近，但是字符更瘦，字体更细</p>
+</li>
+<li>
+<p>结论</p>
+<p>偶尔选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 93; flex-basis: 225px">
+		<a href="/p/programming-fonts/fonts/inconsolata.PNG" data-size="733x781"><img src="/p/programming-fonts/fonts/inconsolata.PNG"
+				srcset="/p/programming-fonts/fonts/inconsolata_hu6a203d31329cc8649614b7eaa38e566d_65488_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/inconsolata_hu6a203d31329cc8649614b7eaa38e566d_65488_1024x0_resize_box_3.PNG 1024w"
+				width="733"
+				height="781"
+				loading="lazy"
+				alt="inconsolata">
+		</a>
+		
+		<figcaption>inconsolata</figcaption>
+		
+	</figure></p>
+<h2 id="jetbrains-mono">JetBrains Mono</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>JetBrains 公司推出的编程字体。</p>
+</li>
+<li>
+<p>优点</p>
+<ol>
+<li>支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>问题</p>
+<p>1，i，l 最下边的线太宽</p>
+</li>
+<li>
+<p>结论</p>
+<p>轮换选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 99; flex-basis: 237px">
+		<a href="/p/programming-fonts/fonts/jetbrains-mono.PNG" data-size="740x747"><img src="/p/programming-fonts/fonts/jetbrains-mono.PNG"
+				srcset="/p/programming-fonts/fonts/jetbrains-mono_hu153b651c3863e61980ffd25b2f1c59dd_59699_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/jetbrains-mono_hu153b651c3863e61980ffd25b2f1c59dd_59699_1024x0_resize_box_3.PNG 1024w"
+				width="740"
+				height="747"
+				loading="lazy"
+				alt="jetbrains mono">
+		</a>
+		
+		<figcaption>jetbrains mono</figcaption>
+		
+	</figure></p>
+<h2 id="monoid">Monoid</h2>
+<ul>
+<li>
+<p>优点</p>
+<ol>
+<li>支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>字符实际上不是等宽的，只是占位等宽，比如小写字母 i，l 都很窄，导致字符两边的空白比较明显</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>很少使用</p>
+</li>
+</ul>
+<p><img src="/fonts%5cmonoid.PNG" alt="monoid"  /></p>
+<h2 id="roboto-mono">Roboto Mono</h2>
+<ul>
+<li>
+<p>优点</p>
+<ol>
+<li>括号宽度较窄</li>
+</ol>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>不支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>轮换选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 104; flex-basis: 250px">
+		<a href="/p/programming-fonts/fonts/roboto-mono.PNG" data-size="733x703"><img src="/p/programming-fonts/fonts/roboto-mono.PNG"
+				srcset="/p/programming-fonts/fonts/roboto-mono_hu51db7c272d22a483d9247a308cf5dd0c_30239_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/roboto-mono_hu51db7c272d22a483d9247a308cf5dd0c_30239_1024x0_resize_box_3.PNG 1024w"
+				width="733"
+				height="703"
+				loading="lazy"
+				alt="roboto mono">
+		</a>
+		
+		<figcaption>roboto mono</figcaption>
+		
+	</figure></p>
+<h2 id="source-code-pro">Source Code Pro</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>Adobe 出品</p>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>不支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>轮换选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 106; flex-basis: 256px">
+		<a href="/p/programming-fonts/fonts/source-code-pro.PNG" data-size="727x680"><img src="/p/programming-fonts/fonts/source-code-pro.PNG"
+				srcset="/p/programming-fonts/fonts/source-code-pro_hu53edaf1685bb52815f9e7d79a67700e5_58190_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/source-code-pro_hu53edaf1685bb52815f9e7d79a67700e5_58190_1024x0_resize_box_3.PNG 1024w"
+				width="727"
+				height="680"
+				loading="lazy"
+				alt="source code pro">
+		</a>
+		
+		<figcaption>source code pro</figcaption>
+		
+	</figure></p>
+<h2 id="ubuntu-mono">Ubuntu Mono</h2>
+<ul>
+<li>
+<p>描述</p>
+<p>Canonical 出品</p>
+</li>
+<li>
+<p>优点</p>
+<ol>
+<li>2英文宽度 = 1中文宽度</li>
+</ol>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>字符偏小，间距过于紧密</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>根据场景使用</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 105; flex-basis: 252px">
+		<a href="/p/programming-fonts/fonts/ubuntu-mono.PNG" data-size="601x571"><img src="/p/programming-fonts/fonts/ubuntu-mono.PNG"
+				srcset="/p/programming-fonts/fonts/ubuntu-mono_huff7cb812c28b22ffa297b2b1aa1b179e_23879_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/ubuntu-mono_huff7cb812c28b22ffa297b2b1aa1b179e_23879_1024x0_resize_box_3.PNG 1024w"
+				width="601"
+				height="571"
+				loading="lazy"
+				alt="ubuntu mono">
+		</a>
+		
+		<figcaption>ubuntu mono</figcaption>
+		
+	</figure></p>
+<h2 id="victor-mono">Victor Mono</h2>
+<ul>
+<li>
+<p>优点</p>
+<ol>
+<li>支持 ligatures</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>轮换选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 86; flex-basis: 207px">
+		<a href="/p/programming-fonts/fonts/victor-mono.PNG" data-size="677x782"><img src="/p/programming-fonts/fonts/victor-mono.PNG"
+				srcset="/p/programming-fonts/fonts/victor-mono_hub0a41b69d1dc5c5b3b31bd88bda95d62_29605_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/victor-mono_hub0a41b69d1dc5c5b3b31bd88bda95d62_29605_1024x0_resize_box_3.PNG 1024w"
+				width="677"
+				height="782"
+				loading="lazy"
+				alt="victor mono">
+		</a>
+		
+		<figcaption>victor mono</figcaption>
+		
+	</figure></p>
+<h2 id="mononoki">Mononoki</h2>
+<ul>
+<li>
+<p>问题</p>
+<ol>
+<li>不支持 ligatures</li>
+<li>@ 字符实心</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>偶尔选择</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 105; flex-basis: 254px">
+		<a href="/p/programming-fonts/fonts/mononoki.PNG" data-size="673x635"><img src="/p/programming-fonts/fonts/mononoki.PNG"
+				srcset="/p/programming-fonts/fonts/mononoki_hu6089340b96f75bd497daf6a51b7e3009_25055_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/mononoki_hu6089340b96f75bd497daf6a51b7e3009_25055_1024x0_resize_box_3.PNG 1024w"
+				width="673"
+				height="635"
+				loading="lazy"
+				alt="mononoki">
+		</a>
+		
+		<figcaption>mononoki</figcaption>
+		
+	</figure></p>
+<h2 id="m-plus-1-code">M Plus 1 Code</h2>
+<ul>
+<li>
+<p>优点</p>
+<ol>
+<li>2英文宽度 = 1中文宽度</li>
+</ol>
+</li>
+<li>
+<p>问题</p>
+<ol>
+<li>不支持 ligatures</li>
+<li>字母 c 不太喜欢</li>
+<li>整体字间距较小</li>
+</ol>
+</li>
+<li>
+<p>结论</p>
+<p>根据场景使用</p>
+</li>
+</ul>
+<p><figure style="flex-grow: 87; flex-basis: 211px">
+		<a href="/p/programming-fonts/fonts/mplus-code.PNG" data-size="604x687"><img src="/p/programming-fonts/fonts/mplus-code.PNG"
+				srcset="/p/programming-fonts/fonts/mplus-code_hucb63a3dcb912874c974f138569892d9a_28136_480x0_resize_box_3.PNG 480w, /p/programming-fonts/fonts/mplus-code_hucb63a3dcb912874c974f138569892d9a_28136_1024x0_resize_box_3.PNG 1024w"
+				width="604"
+				height="687"
+				loading="lazy"
+				alt="m plus 1 code">
+		</a>
+		
+		<figcaption>m plus 1 code</figcaption>
+		
+	</figure></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/font/">font</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/vscode-java/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">VSCode Java</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/markdown-syntax-guide/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Markdown Syntax Guide</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 wangcl&#39;s blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.4.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#anonymous-pro">Anonymous Pro</a></li>
+    <li><a href="#cascadia-code">Cascadia Code</a></li>
+    <li><a href="#consolas">Consolas</a></li>
+    <li><a href="#consolas-with-yahei">Consolas with Yahei</a></li>
+    <li><a href="#droid-sans-mono">Droid Sans Mono</a></li>
+    <li><a href="#fantasque-sans-mono">Fantasque Sans Mono</a></li>
+    <li><a href="#fira-code">Fira Code</a></li>
+    <li><a href="#hack">Hack</a></li>
+    <li><a href="#hasklig">Hasklig</a></li>
+    <li><a href="#hermit">Hermit</a></li>
+    <li><a href="#ibm-plex-mono">IBM Plex Mono</a></li>
+    <li><a href="#inconsolata">Inconsolata</a></li>
+    <li><a href="#jetbrains-mono">JetBrains Mono</a></li>
+    <li><a href="#monoid">Monoid</a></li>
+    <li><a href="#roboto-mono">Roboto Mono</a></li>
+    <li><a href="#source-code-pro">Source Code Pro</a></li>
+    <li><a href="#ubuntu-mono">Ubuntu Mono</a></li>
+    <li><a href="#victor-mono">Victor Mono</a></li>
+    <li><a href="#mononoki">Mononoki</a></li>
+    <li><a href="#m-plus-1-code">M Plus 1 Code</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script type="text/javascript" src="/ts/main.js" defer></script>
+
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>font on wangcl&#39;s blog</title>
+    <link>https://wangcl.me/tags/font/</link>
+    <description>Recent content in font on wangcl&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://wangcl.me/tags/font/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming Fonts</title>
+      <link>https://wangcl.me/p/programming-fonts/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://wangcl.me/p/programming-fonts/</guid>
+      <description>Programming Fonts 我对于编程字体关注的几个点：
+  等宽
+必需。
+以下字体均为等宽字体。
+  易混淆字符的区分
+必需。
+例如：
+数字 1 和 小写字母 i、l、大写字母 I、L
+数字 0 和 小写字母 a、o、大写字母 O
+  支持 ligatures
+可选。
+旧字体不支持，近年出的字体一般都已经支持了。
+  其他常见的关注点：
+  英文字符 1/2 宽度
+中英文混排时一个中文宽度 == 两个英文宽度
+  支持 powerline
+vim 的 statusline plugin
+  Anonymous Pro   描述
+比较古老的一款字体
+  问题
+ 字符的装饰过多 不支持 ligatures    结论
+作为某些旧系统下的选择</description>
+    </item>
+    
+  </channel>
+</rss>
