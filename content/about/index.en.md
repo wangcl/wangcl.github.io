@@ -10,15 +10,15 @@ section_titles:
     timeline: "⏳ Site Timeline"
 
 profile:
-    name: "Your Name"
-    role: "Developer / Blogger"
-    bio: "A passionate developer sharing knowledge and experiences."
-    tags: ["Hugo", "Web Dev", "Open Source"]
+    name: "wangcl"
+    role: "software engineer"
+    bio: "Developer. Go enthusiast. Soccer fanatic."
+    tags: ["Developer", "Go", "Soccer"]
 
 links:
   - title: GitHub
-    description: My GitHub profile with open source projects.
-    website: https://github.com/liu-houliang
+    description: My GitHub Homepage
+    website: https://github.com/wangcl
     image: brand-github
   - title: Hugo
     description: The world's fastest framework for building websites.
@@ -30,11 +30,11 @@ about_me:
     text: "Developer"
     icon: "briefcase"
   - label: "Hobbies"
-    text: "Coding / Reading / Travel"
+    text: "Coding / Reading / Go / Soccer"
     icon: "bike"
   - label: "Email"
-    text: "your@email.com"
-    link: "mailto:your@email.com"
+    text: "wangcl@live.com"
+    link: "mailto:wangcl@live.com"
     icon: "mail"
 
 about_site:
@@ -55,11 +55,12 @@ about_site:
 ## ⏳ Site Timeline
 
 {{< timeline >}}
-    {{< timeline-item date="2024-01" >}}
-    Started this blog using Hugo and the Stack theme.
+    {{< timeline-item date="2021-06" >}}
+    Started this blog using Hugo and Stack theme.
     {{< /timeline-item >}}
     
-    {{< timeline-item date="2024-02" >}}
-    Customized the theme and added new features.
+
+    {{< timeline-item date="2026-09" >}}
+    Recreated this blog using hugo-stack-starter.
     {{< /timeline-item >}}
 {{< /timeline >}}

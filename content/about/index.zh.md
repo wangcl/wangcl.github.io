@@ -10,15 +10,15 @@ section_titles:
     timeline: "⏳ 建站历程"
 
 profile:
-    name: "你的名字"
-    role: "开发者 / 博主"
-    bio: "一个热爱技术的开发者，分享知识和经验。"
-    tags: ["Hugo", "Web开发", "开源"]
+    name: "wangcl"
+    role: "software engineer"
+    bio: "Developer. Go enthusiast. Soccer fanatic."
+    tags: ["Developer", "Go", "Soccer"]
 
 links:
   - title: GitHub
-    description: 我的 GitHub 主页，包含开源项目。
-    website: https://github.com/liu-houliang
+    description: 我的 GitHub 主页
+    website: https://github.com/wangcl
     image: brand-github
   - title: Hugo
     description: 世界上最快的静态网站构建框架。
@@ -30,11 +30,11 @@ about_me:
     text: "开发者"
     icon: "briefcase"
   - label: "爱好"
-    text: "编程 / 阅读 / 旅行"
+    text: "编程 / 阅读 / 围棋 / 足球"
     icon: "bike"
   - label: "邮箱"
-    text: "your@email.com"
-    link: "mailto:your@email.com"
+    text: "wangcl@live.com"
+    link: "mailto:wangcl@live.com"
     icon: "mail"
 
 about_site:
@@ -55,11 +55,12 @@ about_site:
 ## ⏳ 建站历程
 
 {{< timeline >}}
-    {{< timeline-item date="2024-01" >}}
+    {{< timeline-item date="2021-06" >}}
     使用 Hugo 和 Stack 主题搭建了这个博客。
     {{< /timeline-item >}}
     
-    {{< timeline-item date="2024-02" >}}
-    自定义主题并添加了新功能。
+
+    {{< timeline-item date="2026-09" >}}
+    使用 hugo-stack-starter 重新搭建了这个博客。
     {{< /timeline-item >}}
 {{< /timeline >}}
