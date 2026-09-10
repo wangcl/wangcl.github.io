@@ -15,7 +15,7 @@ SortBy         = "default"
     lastUpdated = ":date_medium"
 
 [sidebar]
-    emoji    = "🚀"
+    emoji    = "☕"
     subtitle = "Developer. Go enthusiast. Soccer fanatic."
     avatar   = "img/iceberg.jpg"
 
