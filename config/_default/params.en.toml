@@ -2,13 +2,13 @@
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
-favicon        = "img/favicon.jpg"
+favicon        = "img/snake.png"
 
 # Accepted values: "default", "lastmod"
-SortBy              = "default"
+SortBy         = "default"
 
 [footer]
-    customText = "Custom footer content"
+    customText = "created by hugo-stack-starter"
 
 [dateFormat]
     published   = ":date_medium"
@@ -16,8 +16,8 @@ SortBy              = "default"
 
 [sidebar]
     emoji    = "🚀"
-    subtitle = "An starter template based on Hugo Theme Stack v4"
-    avatar   = "img/avatar.jpg"
+    subtitle = "Developer. Go enthusiast. Soccer fanatic."
+    avatar   = "img/iceberg.jpg"
 
 [article]
     headingAnchor = true
