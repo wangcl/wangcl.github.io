@@ -2,7 +2,7 @@
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
-favicon        = "img/snake.png"
+favicon        = "img/octocat.svg"
 
 # Accepted values: "default", "lastmod"
 SortBy         = "default"
