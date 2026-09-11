@@ -5,7 +5,7 @@ layout: "about"
 
 section_titles:
     links: "🔗 项目 & 链接"
-    about_me: "🪪 关于我"
+    about_me: "📋 关于我"
     about_site: "🏠 关于网站"
     timeline: "📜 建站历程"
 

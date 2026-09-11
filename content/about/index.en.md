@@ -5,7 +5,7 @@ layout: "about"
 
 section_titles:
     links: "🔗 Projects & Links"
-    about_me: "🪪 About Me"
+    about_me: "📋 About Me"
     about_site: "🏠 About Website"
     timeline: "📜 Site Timeline"
 
