@@ -4,10 +4,10 @@ description: "About this blog and the author"
 layout: "about"
 
 section_titles:
-    links: "🚀 Projects & Links"
-    about_me: "👨 About Me"
+    links: "🔗 Projects & Links"
+    about_me: "🪪 About Me"
     about_site: "🏠 About Website"
-    timeline: "⏳ Site Timeline"
+    timeline: "📜 Site Timeline"
 
 profile:
     name: "wangcl"
