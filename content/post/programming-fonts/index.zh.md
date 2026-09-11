@@ -161,7 +161,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 1. 不支持连字
 2. 虽然没看到明确声明，但从显示上看，中英宽度比 2:1，混合排版是可以对齐的
 3. 中英宽度 2:1 说明这款字体是偏瘦的
-4. 本字体除标准的Light、Bold等多种字重外，还提供了 Condensed、SemiCondensed、ExtraCondensed、UltraCondensed、Expanded、SemiExpanded、ExtraExpanded、UltraExpanded 等多种版本，混合中文后中文似乎调用了宋体显示，很奇怪。完全不喜欢 windows 下的宋体显示，用的话就老老实实用标准版
+4. 本字体除标准的Light、Bold等多种字重外，还提供了 Condensed、SemiCondensed、ExtraCondensed、UltraCondensed、Expanded、SemiExpanded、ExtraExpanded、UltraExpanded 等多种版本，但这些版本混合中文后中文似乎调用了宋体显示，很奇怪。完全不喜欢 windows 下的宋体显示，用的话就老老实实用标准版
 
 ### Intel One Mono
 
@@ -174,4 +174,15 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 1. 支持连字，但默认未开启，在 sublime text 中启用需要在 font.options 中增加 ss01
 2. 中英宽度比非 2:1
 3. Intel 出品，很有复古风的字体，挺不错
+
+### Iosevka
+
+显示效果：
+
+![iosevka](iosevka.png)
+
+评价：
+
+1. 中英宽度比 2:1，混合排版是可以对齐的。英文字符偏瘦
+2. 如果需要中英混合排版，不如直接用 等距更纱黑体
 
