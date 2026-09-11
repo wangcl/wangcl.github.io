@@ -23,7 +23,7 @@ build:
 ## 测试环境
 
 - 操作系统：windows 11
-- 编辑器：sublime text 4
+- 编辑器：sublime text 4，默认暗色主题，配色方案 MonokaiEasyForRetina
 
 ## 字体展示
 
@@ -109,3 +109,14 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 2. 不是很喜欢字符 "@" 的风格
 3. 小写字母 "r" 是 Fira Code 标志性字符
 4. 图中实际使用字体是 Fira Code Retina
+
+### Hack
+
+显示效果：
+
+![hack](hack.png)
+
+评价：
+
+1. 不支持连字
+2. 中英宽度比非 2:1
