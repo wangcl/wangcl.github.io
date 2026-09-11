@@ -150,3 +150,16 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 2. 中英宽度比非 2:1
 3. IBM 出品，总感觉一种古板的气息。斜体的 "t"、"i" 的小尾巴竟然几乎一样，"x" 又突然有点跳脱的感觉。总之不是我的喜好
 
+### Inconsolata
+
+显示效果：
+
+![inconsolata](inconsolata.png)
+
+评价：
+
+1. 不支持连字
+2. 虽然没看到明确声明，但从显示上看，中英宽度比 2:1，混合排版是可以对齐的
+3. 中英宽度 2:1 说明这款字体是偏瘦的
+4. 本字体除标准的Light、Bold等多种字重外，还提供了 Condensed、SemiCondensed、ExtraCondensed、UltraCondensed、Expanded、SemiExpanded、ExtraExpanded、UltraExpanded等多种版本，混合中文后中文似乎调用了宋体显示，很奇怪。还是老老实实用标准版
+
