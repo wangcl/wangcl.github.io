@@ -335,3 +335,18 @@ Adobe 出品的著名开源字体。
 2. 中英宽度比非 2:1
 3. 不愧是大厂出品，整体字型饱满，非常漂亮。字型饱满的小问题就是显示密度偏低
 
+### 中英混合字体
+
+#### JetBrains Maple Mono
+
+由 JetBrains Mono 和 Maple Mono 字体合成。
+
+显示效果：
+
+![jetbrains maple mono](jetbrains-maple-mono.png)
+
+评价：
+
+1. 支持连字
+2. 中英宽度比 2:1，实现方式是保留英文字符宽度，拉长中文字符间距，所以看起来中文字之间的空白有点大
+
