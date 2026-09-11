@@ -67,7 +67,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 
 1. "()" 的弧度有点过大了，成对的小括号几乎闭合成一个圆
 
-1. 字体文件的 metadata 似乎并未区分斜体和粗体
+1. 字体文件的 metadata 似乎并未区分斜体和粗体，导致识别可能有点问题
 
 ### Courier Prime Code
 
@@ -82,6 +82,8 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 1. 中英宽度比非 2:1
 
 1. 字符间距挺宽的，显得不拥挤
+
+1. 挺不错的字体，除了 mono 字体外还有 sans 和 serif 两种普通字体
 
 ### Fantasque Sans Mono
 
@@ -107,8 +109,8 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 
 1. 中英宽度比非 2:1
 2. 不是很喜欢字符 "@" 的风格
-3. 小写字母 "r" 是 Fira Code 标志性字符
-4. 图中实际使用字体是 Fira Code Retina
+3. 小写字母 "r" 是 Fira Code 标志性字符，是否喜欢则见仁见智
+4. 图中实际使用字体是 Fira Code Retina，虽然也没看出来和标准版本有什么区别
 
 ### Hack
 
@@ -120,6 +122,8 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 
 1. 不支持连字
 2. 中英宽度比非 2:1
+3. "i"、"l" 的向右的小尾巴挺好的
+4. 中规中矩的字体，挺好的
 
 ### Hermit
 
@@ -131,5 +135,18 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 
 1. 不支持连字
 2. 中英宽度比非 2:1
-3. 这个字体也是稍有一点另类的字体，偶尔可以换一换口味
+3. "i"、"j" 上的圆点感觉有点重
+4. 这个字体也是稍有一点**另类**的字体，偶尔可以换一换口味
+
+### IBM Plex Mono
+
+显示效果：
+
+![IBM plex mono](IBM-plex-mono.png)
+
+评价：
+
+1. 不支持连字
+2. 中英宽度比非 2:1
+3. IBM 出品，总感觉一种古板的气息。斜体的 "t"、"i" 的小尾巴竟然几乎一样，"x" 又突然有点跳脱的感觉。总之不是我的喜好
 
