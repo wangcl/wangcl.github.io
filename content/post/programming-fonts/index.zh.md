@@ -350,3 +350,15 @@ Adobe 出品的著名开源字体。
 1. 支持连字
 2. 中英宽度比 2:1，实现方式是保留英文字符宽度，拉长中文字符间距，所以看起来中文字之间的空白有点大
 
+#### JetBrainsLxgwNerdMono
+
+由 JetBrains Mono 和 霞鹜文楷等宽 字体合成，并添加了 Nerd 字体。
+
+显示效果：
+
+![JetBrainsLxgwNerdMono](jetbrains-lxgw-nerd-mono.png)
+
+评价：
+
+1. 不支持连字，有点奇怪，JetBrains Mono 本身是支持的
+2. 中英宽度比 2:1，实现方式是保留英文字符宽度，拉长中文字符间距，所以看起来中文字之间的空白有点大
