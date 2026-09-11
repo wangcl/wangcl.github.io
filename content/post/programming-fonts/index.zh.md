@@ -45,11 +45,22 @@ build:
 
 效果图：
 
-![显示效果](cascadia-code.png)
+![cascadia code](cascadia-code.png)
 
 评价：
 
-1. 不支持中文
-2. 中英宽度比非2:1
-3. 不太喜欢小写字母"a"、"u"的小尾巴
+1. 中英宽度比非2:1
+2. 不太喜欢小写字母"a"、"u"的小尾巴
 
+### Code New Roman
+
+效果图：
+
+![code new roman](code-new-roman.png)
+
+评价：
+
+1. 不支持连字
+2. 中英宽度比非2:1
+3. "()"的弧度有点过大了，成对的小括号几乎闭合成一个圆
+4. 字体文件的 metadata 似乎并未区分斜体和粗体
