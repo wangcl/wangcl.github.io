@@ -1,13 +1,13 @@
 [zh]
-    languageCode      = "zh-cn"
-    languageName      = "中文"
-    languagedirection = "ltr"
-    title             = "wangcl's blog"
-    weight            = 1
+    locale    = "zh-cn"
+    label     = "中文"
+    direction = "ltr"
+    title     = "wangcl's blog"
+    weight    = 1
 
 [en]
-    languageCode      = "en-us"
-    languageName      = "English"
-    languagedirection = "ltr"
-    title             = "wangcl's blog"
-    weight            = 2
+    locale    = "en-us"
+    label     = "English"
+    direction = "ltr"
+    title     = "wangcl's blog"
+    weight    = 2

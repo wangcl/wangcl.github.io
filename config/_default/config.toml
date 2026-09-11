@@ -1,7 +1,7 @@
 # Change baseurl before deploy
-baseurl      = "https://wangcl.github.io/"
-languageCode = "zh-cn"
-title        = "wangcl's blog"
+baseurl = "https://wangcl.github.io/"
+locale  = "zh-cn"
+title   = "wangcl's blog"
 
 # Set default language
 defaultContentLanguage = "zh"
