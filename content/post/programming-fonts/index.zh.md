@@ -39,7 +39,9 @@ build:
 
 1. 评价仅为个人主观意见
 
-### Cascadia Code
+### 英文字体
+
+#### Cascadia Code
 
 Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。官方还推出了一款名为 [Cascadia Next](https://github.com/microsoft/cascadia-code/releases/tag/cascadia-next) 的 CJK 字体的预览版，截止当前已经预览 2 年了，不知道该字体是否还在继续。
 
@@ -53,7 +55,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 
 1. 不太喜欢小写字母 "a"、"u" 的小尾巴
 
-### Code New Roman
+#### Code New Roman
 
 效果图：
 
@@ -69,7 +71,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 
 1. 字体文件的 metadata 似乎并未区分斜体和粗体，导致识别可能有点问题
 
-### Courier Prime Code
+#### Courier Prime Code
 
 显示效果：
 
@@ -85,7 +87,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 
 1. 挺不错的字体，除了 mono 字体外还有 sans 和 serif 两种普通字体
 
-### Fantasque Sans Mono
+#### Fantasque Sans Mono
 
 显示效果：
 
@@ -97,7 +99,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 2. 字体稍微有点非正统的风格，比如小写字母 "m"、"n" 最后一笔的小尾巴。看惯了一板一眼风格的字符后可以换一下体验
 3. 自带了两种不同风格字母 "k" 的字体文件，除了这里的标准风格的 "k"，还有一种类似手写体的带圆圈的 "k"
 
-### Fira Code
+#### Fira Code
 
 非常著名且使用广泛的字体，连字支持非常完善。有其他字体专门从 Fira Code 中提取连字设计。
 
@@ -112,7 +114,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 3. 小写字母 "r" 是 Fira Code 标志性字符，是否喜欢则见仁见智
 4. 图中实际使用字体是 Fira Code Retina，虽然也没看出来和标准版本有什么区别
 
-### Hack
+#### Hack
 
 显示效果：
 
@@ -125,7 +127,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 3. "i"、"l" 的向右的小尾巴挺好的
 4. 中规中矩的字体，挺好的
 
-### Hermit
+#### Hermit
 
 显示效果：
 
@@ -138,7 +140,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 3. "i"、"j" 上的圆点感觉有点重
 4. 这个字体也是稍有一点**另类**的字体，偶尔可以换一换口味
 
-### IBM Plex Mono
+#### IBM Plex Mono
 
 显示效果：
 
@@ -152,7 +154,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 4. 斜体的 "t"、"i" 的小尾巴竟然几乎一样，"x" 又突然有点跳脱的感觉
 5. IBM 出品，总感觉一种古板的气息，总之不是我的喜好
 
-### Inconsolata
+#### Inconsolata
 
 显示效果：
 
@@ -165,7 +167,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 3. 中英宽度 2:1 说明这款字体是偏瘦的
 4. 本字体除标准的Light、Bold等多种字重外，还提供了 Condensed、SemiCondensed、ExtraCondensed、UltraCondensed、Expanded、SemiExpanded、ExtraExpanded、UltraExpanded 等多种版本，但这些版本混合中文后中文似乎调用了宋体显示，很奇怪。完全不喜欢 windows 下的宋体显示，用的话就老老实实用标准版
 
-### Intel One Mono
+#### Intel One Mono
 
 显示效果：
 
@@ -177,7 +179,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 2. 中英宽度比非 2:1
 3. Intel 出品，很有复古风的字体，挺不错
 
-### Iosevka
+#### Iosevka
 
 显示效果：
 
@@ -188,7 +190,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 1. 中英宽度比 2:1，混合排版是可以对齐的。英文字符偏瘦
 2. 如果需要中英混合排版，不如直接用 等距更纱黑体
 
-### JetBrains Mono
+#### JetBrains Mono
 
 显示效果：
 
@@ -200,7 +202,7 @@ Microsoft 官方出品，Microsoft Terminal 默认字体，字重相对较粗。
 2. 中英宽度比非 2:1
 3. 不大喜欢小写字母 "i" 最下边使用完整宽度的横线，显得过于厚重了。对于编程中常见的 "if" 关键字，"i" 的完整宽度横线使其显得比 "f" 还大，不好看
 
-### Menlo
+#### Menlo
 
 MacOS 上的字体，在 windows 下效果只能说很一般。
 
@@ -214,7 +216,7 @@ MacOS 上的字体，在 windows 下效果只能说很一般。
 2. 中英宽度比非 2:1
 3. 带有"点"的字符竟然还是方的，如："."、":"、";" 等
 
-### Monaspace Argon
+#### Monaspace Argon
 
 显示效果：
 
@@ -226,7 +228,7 @@ MacOS 上的字体，在 windows 下效果只能说很一般。
 2. 中英宽度比非 2:1
 3. 小写字母 "i"、"l" 非常漂亮，"t" 持保留态度
 
-### Monego
+#### Monego
 
 MacOS 下著名的 Monaco 字体的开源修改版本，补齐了 Monaco 中缺少的粗体和斜体。
 
@@ -241,7 +243,7 @@ MacOS 下著名的 Monaco 字体的开源修改版本，补齐了 Monaco 中缺�
 3. "()"、"[]"、"{}" 间隔都有点小
 4. 跟 Monaco 一样属于偏饱满的字体
 
-### Monoid
+#### Monoid
 
 显示效果：
 
@@ -252,7 +254,7 @@ MacOS 下著名的 Monaco 字体的开源修改版本，补齐了 Monaco 中缺�
 1. 连字的支持很有限，很多常用的连字都不支持，如 ">="
 2. 中英宽度比非 2:1，而且中文字符比例非常小，字重非常细，中英混合排版变得非常奇怪，属于不可用状态
 
-### Mononoki
+#### Mononoki
 
 显示效果：
 
@@ -266,7 +268,7 @@ MacOS 下著名的 Monaco 字体的开源修改版本，补齐了 Monaco 中缺�
 4. "点" 也是方的，无力吐槽
 5. "()" 弧度过高
 
-### M+1 Code
+#### M+1 Code
 
 显示效果：
 
@@ -278,7 +280,7 @@ MacOS 下著名的 Monaco 字体的开源修改版本，补齐了 Monaco 中缺�
 2. 中英宽度比非 2:1
 3. M+ 家族的字体非常丰富，整体规规矩矩，挑不出什么毛病
 
-### Operator Mono
+#### Operator Mono
 
 显示效果：
 
@@ -291,7 +293,7 @@ MacOS 下著名的 Monaco 字体的开源修改版本，补齐了 Monaco 中缺�
 3. "%" 竟然是实心的
 4. 不大能接受手写风格的小写字母 "r"
 
-### Roboto Mono
+#### Roboto Mono
 
 显示效果：
 
@@ -304,7 +306,7 @@ MacOS 下著名的 Monaco 字体的开源修改版本，补齐了 Monaco 中缺�
 3. 小写字母 "i"、"j" 的点有点过小
 4. 字体文件的 metadata 似乎并未区分斜体和粗体，导致识别可能有点问题
 
-### SF Mono
+#### SF Mono
 
 MacOS 新一代编程用字体。
 
