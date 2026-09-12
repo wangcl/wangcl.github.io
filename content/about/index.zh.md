@@ -32,10 +32,6 @@ about_me:
   - label: "爱好"
     text: "编程 / 阅读 / 围棋 / 足球"
     icon: "bike"
-  - label: "邮箱"
-    text: "wangcl@live.com"
-    link: "mailto:wangcl@live.com"
-    icon: "mail"
 
 about_site:
   - label: "框架"
