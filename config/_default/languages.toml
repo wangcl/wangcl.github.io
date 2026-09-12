@@ -2,12 +2,12 @@
     locale    = "zh-cn"
     label     = "中文"
     direction = "ltr"
-    title     = "wangcl's blog"
+    title     = "wangcl"
     weight    = 1
 
 [en]
     locale    = "en-us"
     label     = "English"
     direction = "ltr"
-    title     = "wangcl's blog"
+    title     = "wangcl"
     weight    = 2
