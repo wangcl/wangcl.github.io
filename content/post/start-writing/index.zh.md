@@ -14,7 +14,7 @@ tags:
 
 
 
-> <span style="color: #0366d6;">**💡 提示：**</span>本篇博文保留了 hugo-stack-starter 的在线预览 (Live Demo)中的原始博文[《创建第一篇文章》](https://liu-houliang.github.io/hugo-stack-starter/post/start-writing/)，仅用于新建博文时的语法参考。
+> <span style="color: #0366d6;">**💡 说明：**</span>本篇博文保留了 hugo-stack-starter 的在线预览 (Live Demo)中的原始博文[《创建第一篇文章》](https://liu-houliang.github.io/hugo-stack-starter/post/start-writing/)，仅用于新建博文时的语法参考。
 
 ## 创建第一篇文章
 
