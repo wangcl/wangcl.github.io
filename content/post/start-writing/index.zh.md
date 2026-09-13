@@ -3,7 +3,6 @@ title: "开始写博客：Markdown 入门与多语言写作"
 description: "学习如何创建第一篇博客文章，掌握 Markdown 基本语法，以及如何编写中英双语文章。"
 date: 2026-04-12
 lastmod: 2026-04-23
-weight: 4
 categories:
     - Tutorial
 tags:

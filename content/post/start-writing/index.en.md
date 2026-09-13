@@ -3,7 +3,6 @@ title: "Start Writing: Markdown Basics and Multilingual Posts"
 description: "Learn how to create your first blog post, master basic Markdown syntax, and write bilingual (Chinese and English) posts."
 date: 2026-04-12
 lastmod: 2026-04-23
-weight: 4
 categories:
     - Tutorial
 tags:
