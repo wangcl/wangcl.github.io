@@ -1,5 +1,5 @@
 ---
-title: "Sublime_merge_ui_chinese_font"
+title: "Sublime Merge 界面中文字体显示问题解决"
 description: 修复 Sublime Merge 界面（非编辑区）的中文显示问题
 date: 2021-12-11
 lastmod: 2026-09-13
