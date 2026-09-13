@@ -18,31 +18,31 @@ build:
 
 ## 操作步骤
 
-1. 打开 [hugo-stack-starter](https://github.com/liu-houliang/hugo-stack-starter) 仓库（目前是 1.0.1 Release 版本），点击右上角绿色的 "Use this template"
+1. 打开 [hugo-stack-starter](https://github.com/liu-houliang/hugo-stack-starter) 仓库（目前是 `1.0.1 Release` 版本），点击右上角绿色的 <span style="color:#28a745;">Use this template</span>
 
 2. 创建新仓库时，命名为 "用户名.github.io"（如有旧版本，建议将旧版本仓库改名备份）
 
-3. 进入新仓库，点击 Settings -> Pages，将 Source 改为 "GitHub Actions"
+3. 进入新仓库，点击 Settings -> Pages，将 Source 改为 `GitHub Actions`
 
 4. 修改网站框架内容
 
    需修改的文件主要位于 `config/_default/` 目录下：
 
    - `config.toml`
-     - `baseurl`：必须改成自己的主页地址 "https://用户名.github.io/"
+     - `baseurl`：必须改成自己的主页地址 `https://用户名.github.io/`
      - `title`
      
    - `languages.toml`
      - `title`
-  
+    
    - `menu.zh.toml` | `menu.en.toml`
      - `social.url`
      
    - `params.toml`
      - `footer.since`
-  
+    
      - `footer.launchDate`
-  
+    
    - `params.en.toml` | `params.zh.toml`
      - `favicon`(optional)
      - `footer.customText`
@@ -85,6 +85,18 @@ build:
      - `comments.waline.pageview = false`
 
      - 注释掉：`comments.waline.serverURL`
+
+## 新增博文
+
+1. 通过 Hugo 命令行创建
+
+   本地目录中执行：`hugo new content post/link_path/index.zh.md`
+
+   其中 `link_path` 是 `content/post/` 路径下的路径名，也是发布后的博文链接地址的最后一部分。
+
+2. 手工创建
+
+   进入 `content/post/` 目录，手工创建子目录，并在子目录下新增 `index.zh.md` 或 `index.en.md`。
 
 ## 发布
 
