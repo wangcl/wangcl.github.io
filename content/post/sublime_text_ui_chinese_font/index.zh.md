@@ -24,7 +24,7 @@ build:
 ## 环境
 
 - **操作系统：** windows 11
-- **sublime text：**build_4200_x64 portable
+- **sublime text：** build_4200_x64 portable
 
 ## 修复步骤
 
@@ -38,6 +38,8 @@ build:
 3. 手动编辑配置信息（两个文件内容相同）：
 
    *中文使用 `Noto Sans Mono CJK SC` 仅仅是因为它有标准的英文名称*
+   
+   *使用时自行去掉注释部分*
 
 ```json
 {
@@ -67,7 +69,9 @@ build:
             "font.face": "Noto Sans Mono CJK SC",
         },
 
-        // 如果 Preferences -> Settings 中的 font_size 设置增大，会导致 ctrl + f 搜索栏输入框的高度增大，超出其他元素。这里限制为小号字体，使其保持高度不变
+        // 如果 Preferences -> Settings 中的 font_size 设置增大，
+        // 会导致 ctrl + f 搜索栏输入框的高度增大，超出其他元素。
+        // 这里限制为小号字体，使其保持高度不变
         {
             "class": "text_line_control",
             "parents": [{"class": "panel_control"}],

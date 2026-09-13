@@ -17,7 +17,7 @@ build:
 ## 环境
 
 - **操作系统：** windows 11
-- **sublime merge：**build_2125_x64 portable
+- **sublime merge：** build_2125_x64 portable
 
 ## 默认中文显示
 
