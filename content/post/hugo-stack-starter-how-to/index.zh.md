@@ -18,9 +18,9 @@ build:
 
 ## 操作步骤
 
-1. 打开 [hugo-stack-starter](https://github.com/liu-houliang/hugo-stack-starter) 仓库（目前是 `1.0.1 Release` 版本），点击右上角绿色的 <span style="color:#28a745;">Use this template</span>
+1. 浏览器中访问 [hugo-stack-starter](https://github.com/liu-houliang/hugo-stack-starter) 仓库（目前是 `1.0.1 Release` 版本），点击右上方绿色的 <span style="color:#28a745;">Use this template</span>
 
-2. 创建新仓库时，命名为 "用户名.github.io"（如有旧版本，建议将旧版本仓库改名备份）
+2. 创建新仓库时，命名为 `用户名.github.io`（如有旧版本，建议将旧版本仓库改名备份）
 
 3. 进入新仓库，点击 Settings -> Pages，将 Source 改为 `GitHub Actions`
 
@@ -92,7 +92,7 @@ build:
 
    本地目录中执行：`hugo new content post/link_path/index.zh.md`
 
-   其中 `link_path` 是 `content/post/` 路径下的路径名，也是发布后的博文链接地址的最后一部分。
+   其中 `link_path` 是 `content/post/` 目录下的子目录名，也是发布后的博文链接地址的最后一部分。
 
 2. 手工创建
 
@@ -100,4 +100,9 @@ build:
 
 ## 发布
 
-修改完毕后提交（commit & push），等待一会后即可通过浏览器访问。
+执行提交（commit & push），等待一会后即可通过浏览器访问。
+
+## 常见问题
+
+1. Github Actions 的处理任务偶尔会进入幽灵排队导致发布失败，此时在 Github 页面的 `Actions` 页，点击左侧的 `Build and deploy` 工作流，在页面右侧的列表中找到出问题的任务并手工处理。
+
