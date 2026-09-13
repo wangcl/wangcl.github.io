@@ -17,7 +17,7 @@ SortBy         = "default"
 
 [sidebar]
     emoji    = "☕"
-    subtitle = "Developer. Go enthusiast. Soccer fanatic."
+    subtitle = "软件开发者. 围棋爱好者. 球迷."
     avatar   = "img/iceberg.jpg"
 
 [article]
