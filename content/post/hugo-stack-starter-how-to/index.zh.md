@@ -1,6 +1,6 @@
 ---
-title: "Hugo Stack Starter How To"
-description: 使用 Hugo Stack Starter 模板在 Github Pages 上发布个人主页
+title: "How-To: Hugo Stack Starter"
+description: 使用 Hugo Stack Starter Template 在 Github Pages 上发布个人主页
 date: 2026-09-11T09:49:17+08:00
 lastmod: 2026-09-13
 math: false
@@ -29,38 +29,38 @@ build:
    需修改的文件主要位于 `config/_default/` 目录下：
 
    - `config.toml`
-  - `baseurl`：必须改成自己的主页地址 "https://用户名.github.io/"
+     - `baseurl`：必须改成自己的主页地址 "https://用户名.github.io/"
      - `title`
      
-- `languages.toml`
+   - `languages.toml`
      - `title`
   
    - `menu.zh.toml` | `menu.en.toml`
-  - `social.url`
+     - `social.url`
      
-- `params.toml`
+   - `params.toml`
      - `footer.since`
   
      - `footer.launchDate`
   
    - `params.en.toml` | `params.zh.toml`
-  - `favicon`(optional)
+     - `favicon`(optional)
      - `footer.customText`
-  - `sidebar.avatar`(optional)
+     - `sidebar.avatar`(optional)
      - `sidebar.emoji`(optional)
-  - `sidebar.subtitle`
+     - `sidebar.subtitle`
    
    其他目录修改：
    
    - `assets/img`
+
+     头像图片等
    
-  头像图片等
+   - `content/about`
    
-- `content/about`
+     “关于”(About) 页面信息，内容改成自己的
    
-  ”关于“(About) 页面信息，内容改成自己的
-   
-- 删除 `content/post/` 中的原有博文
+   - 删除 `content/post/` 中的原有博文
 
 ## 其他修改(optional)
 
@@ -70,6 +70,7 @@ build:
 
    - `config.toml`
      - `languageCode -> locale`
+
    - `languages.toml`
      - `languageCode -> locale`
      - `languageName -> label`
@@ -79,11 +80,11 @@ build:
 
    - `params.toml`
 
-     `comments.enabled = false`
+     - `comments.enabled = false`
 
-     `comments.waline.pageview = false`
+     - `comments.waline.pageview = false`
 
-     注释掉：`comments.waline.serverURL`
+     - 注释掉：`comments.waline.serverURL`
 
 ## 发布
 
