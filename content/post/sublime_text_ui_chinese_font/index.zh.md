@@ -15,9 +15,11 @@ build:
 
 ## 前言
 
-之前调整 Sublime Text 界面中文显示问题的方式是从 3.x 版本沿袭下来的，主要通过 `font_options` 设置 `gdi` 模式，在操作系统中增加 `fontLink` 映射配置，可能还要增加 `dpi_scale` 限制字体放大。
+一直用 Sublime Text 作为文本编辑器，从 2.x -> 3.x -> 4.x 版本。之前调整 Sublime Text 界面中文显示问题的方式是从 2.x、3.x 版本沿袭下来的，主要通过 `font_options` 设置 `gdi` 模式（可能还要增加 `dpi_scale` 限制字体放大），同时需要在操作系统的注册表中增加 `fontLink` 映射配置。
 
-4.0 版本已经推出这么久了，我把 `font_options` 从 `gdi` 调整成了 `gray_antialias`，发现界面的中文显示还是从前的问题。以下通过覆盖默认配置的方式解决界面中文显示问题。终于可以删除注册表中那么多 `fontLink` 配置条目了，每次安装 windows 都要配置一遍。
+4.0 版本已经推出这么久了，把 `font_options` 从 `gdi` 调整成了 `gray_antialias` 后发现界面的中文显示还是和从前一样。以下通过覆盖默认配置的方式解决界面中文显示问题。
+
+*终于可以删除注册表中那么多 `fontLink` 配置条目了，每次安装 windows 都要配置一遍。*
 
 ## 环境
 
@@ -34,6 +36,8 @@ build:
    - `Default Dark.sublime-theme`：深色主题
 
 3. 手动编辑配置信息（两个文件内容相同）：
+
+   *中文使用 `Noto Sans Mono CJK SC` 仅仅是因为它有标准的英文名称*
 
 ```json
 {
