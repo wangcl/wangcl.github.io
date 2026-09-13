@@ -32,10 +32,6 @@ about_me:
   - label: "Hobbies"
     text: "Coding / Reading / Go / Soccer"
     icon: "bike"
-  - label: "Email"
-    text: "wangcl@live.com"
-    link: "mailto:wangcl@live.com"
-    icon: "mail"
 
 about_site:
   - label: "Framework"
