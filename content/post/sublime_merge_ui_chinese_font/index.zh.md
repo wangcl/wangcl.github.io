@@ -46,6 +46,8 @@ Sublime Merge UI 部分的字体不能直接通过 `Preferences -> Font Face` �
 3. 手动编辑配置信息（两个文件内容相同）：
 
    将所有可能涉及中文字体显示的部分，`font.face` 设置成 `Noto Sans Mono CJK SC` 字体（根据喜好自行修改）：
+   
+   *使用时自行去掉注释部分*
 
 ```json
 [
