@@ -3,7 +3,7 @@ title: "Sublime Text 界面中文显示问题解决"
 description: 修复 Sublime Text 界面（非编辑区）的中文显示问题
 date: 2026-09-13T19:53:42+08:00
 categories:
-    - Tech
+    - 工具
 tags:
     - sublime
 math: false
