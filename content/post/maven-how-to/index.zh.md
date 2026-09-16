@@ -39,8 +39,6 @@ Maven 构建出的文件的文件名一般为：`artifactId-version[-classifier]
 
 ### 依赖范围
 
-
-
 ![依赖范围](dep-scope.png)
 
 其中 `compile` 是默认的依赖范围。
@@ -73,3 +71,95 @@ Maven 依赖调解的原则：
 排除依赖显式的解除某传递性依赖。一般用于替换某传递性依赖的版本。例如 A 依赖 B，B 依赖 X 的版本 1.0。可将 B 对 X 的依赖通过 `exclusion` 元素排除，然后显式指定 A 依赖 X 的 1.0.1 版本（此场景虽然可以通过依赖调解实现，但通过显式指定使用的版本看起来更清晰）。
 
 `exclusion` 元素中只需 `groupId` 和 `artifactId` 即可，无需 `version` 元素。
+
+## 生命周期和插件
+
+### 生命周期
+
+Maven 为项目的构建过程抽象了统一的生命周期，涵盖了项目的所有构建步骤。
+
+Maven 内置了 3 套相互独立的生命周期：`clean`、`default`、`site`，每个周期又分为多个阶段（`phase`）。周期的阶段是有顺序的，后边的阶段的执行依赖之前的阶段，即执行后边阶段时 Maven 会自动依次执行之前的阶段。
+
+#### clean 生命周期
+
+clean 生命周期主要做清理项目的工作。
+
+- pre-clean
+- clean
+- post-clean
+
+#### default 生命周期
+
+default 生命周期定义了真正构建时需要执行的所有步骤。
+
+- validate
+- initialize
+- generate-sources
+- process-sources
+- generate-resources
+- process-resources
+- compile
+- process-classes
+- generate-test-sources
+- generate-test-resources
+- process-test-resources
+- test-compile
+- process-test-classes
+- test
+- prepare-package
+- package
+- pre-integration-test
+- integration-test
+- post-integration-test
+- verify
+- install
+- deploy
+
+#### site 生命周期
+
+- pre-site
+- site
+- post-site
+- site-deploy
+
+#### 命令行与生命周期
+
+常用的 Maven 命令实际调用了 Maven 的生命周期阶段。如：
+
+- `mvn clean` 命令：调用 clean 生命周期的 clean 阶段（实际执行 pre-clean 和 clean 阶段）
+- `mvn test` 命令：调用 default 生命周期的 test 阶段（实际执行 validate -> test 的所有阶段）
+- `mvn clean install` 命令：调用 clean 生命周期的 clean 阶段 + default 生命周期的 install 阶段
+- `mvn clean deploy site-deploy` 命令：调用 clean 生命周期的 clean 阶段 + default 生命周期的 deploy 阶段 + site 生命周期的 site-deploy 阶段
+
+### 插件
+
+Maven 的核心仅仅定义了抽象的生命周期，而实际的功能是通过插件实现的。插件以独立的 Maven 构件的形式存在，在需要时 Maven 自动从仓库下载。每个 Maven 的插件实现一类功能，每个功能是一个插件目标（Goal）。
+
+Maven 插件的目标需要与指定的生命周期的阶段相绑定，用以完成具体的构建任务。
+
+#### 内置绑定
+
+Maven 内置了很多绑定，从而默认可以执行大部分的构建功能：
+
+clean 生命周期：
+
+- clean 阶段：`maven-clean-plugin:clean`
+
+default 生命周期：
+
+- process-resources 阶段：`maven-resources-plugin:resources`
+- compile 阶段：`maven-compiler-plugin:compile`
+- process-test-resources 阶段：`maven-resources-plugin:testResources`
+- test-compile 阶段：`maven-compiler-plugin:testCompile`
+- test 阶段：`maven-surefire-plugin:test`
+- package 阶段：`maven-jar-plugin:jar`
+- install 阶段：`maven-install-plugin:install`
+- deploy 阶段：`maven-deploy-plugin:deploy`
+
+site 生命周期：
+
+- site 阶段：`maven-site-plugin:site`
+- site-deploy 阶段：`maven-site-plugin:deploy`
+
+#### 自定义绑定
+
