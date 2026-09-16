@@ -8,7 +8,7 @@ tags:
     - maven
 math: false
 comments: false
-draft: true
+draft: false
 build:
     list: always
 ---
@@ -53,7 +53,7 @@ Maven 构建出的文件的文件名一般为：`artifactId-version[-classifier]
 
 ### 依赖调解
 
-依赖调解用于解决依赖的冲突。例如项目依赖了构件 A、B，A 和 B 都间接依赖了 X，但 A 依赖了 X 的 1.0 版本，B 依赖了 X 的 2.0 版本，则产生了依赖冲突。
+依赖调解用于解决依赖的**冲突**。例如项目依赖了构件 A、B，A 和 B 都间接依赖了 X，但 A 依赖了 X 的 1.0 版本，B 依赖了 X 的 2.0 版本，则产生了依赖冲突。
 
 Maven 依赖调解的原则：
 
@@ -141,11 +141,11 @@ Maven 插件的目标需要与指定的生命周期的阶段相绑定，用以�
 
 Maven 内置了很多绑定，从而默认可以执行大部分的构建功能：
 
-clean 生命周期：
+**clean 生命周期：**
 
 - clean 阶段：`maven-clean-plugin:clean`
 
-default 生命周期：
+**default 生命周期：**
 
 - process-resources 阶段：`maven-resources-plugin:resources`
 - compile 阶段：`maven-compiler-plugin:compile`
@@ -156,10 +156,95 @@ default 生命周期：
 - install 阶段：`maven-install-plugin:install`
 - deploy 阶段：`maven-deploy-plugin:deploy`
 
-site 生命周期：
+**site 生命周期：**
 
 - site 阶段：`maven-site-plugin:site`
 - site-deploy 阶段：`maven-site-plugin:deploy`
 
 #### 自定义绑定
 
+除内置绑定外，可以通过 `plugin` 元素中的 `execution` 子元素自行将某插件目标绑定到生命周期的某个阶段，从而完成自定义功能。
+
+例如下述配置将 `maven-source-plugin:jar-no-fork` 目标绑定在 `package` 阶段，构建生成源代码包：
+
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-source-plugin</artifactId>
+    <version>2.1.2</version>
+    <executions>
+        <execution>
+            <id>attach-sources</id>
+            <phase>package</phase>
+            <goals>
+                <goal>jar-no-fork</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+```
+
+#### 从命令行调用插件目标
+
+有些插件目标不适合绑定在生命周期阶段上（例如 `maven-help-plugin` 的 `describe` 目标），因此 Maven 支持在命令行调用插件目标。
+
+Maven 调用插件目标的格式为：`mvn 插件groupId:插件artifactId:插件version:插件goal`
+
+例如：`mvn org.apache.maven.plugins:maven-dependency-plugin:2.1:tree`
+
+但插件的坐标比较长，不易记忆，因此 Maven 引入了插件**前缀**的概念，例如 `dependency` 是 `maven-dependency-plugin` 的前缀，上述命令可以简化为 `mvn dependency:tree`。
+
+*注：实际上插件前缀只对应到插件的 `artifactId`。Maven 会根据仓库元数据（`maven-metadata.xml`）信息及内置规则解析到对应的 `groupId`、`artifactId`、`version`，从而定位到唯一的插件。*
+
+## 聚合与继承
+
+### 聚合
+
+较大的 Maven 项目一般会被拆分成多个**模块（module）**（例如 `springframework` 分为 `spring-core`、`spring-context` 等）。如果每次构建整个项目时都需要依次构建多个模块就显得十分不便。Maven 通过聚合模块将一组模块进行统一管理。
+
+聚合模块只有一个 `pom.xml` 文件，且坐标中的 `packaging` 元素固定为 `pom`。被聚合模块管理的其他模块通过 `modules` 元素声明：
+
+```xml
+<modules>
+    <module>module-1</module>
+    <module>module-2</module>
+</modules>
+```
+
+聚合模块一般为**主从结构**，即被聚合的模块作为聚合模块的子目录存储。但此要求不是必须的，也可以将聚合模块与被聚合模块平级存储，这时需要注意修改 `module` 元素中的路径：
+
+```xml
+<modules>
+    <module>../module-1</module>
+    <module>../module-2</module>
+</modules>
+```
+
+定义了聚合模块之后，就可以通过聚合模块对其包含的所有模块统一进行构建操作了。
+
+### 继承
+
+继承的目的主要是**消除重复**。例如模块 A 和模块 B 都包含单元测试，那么两个模块都需要定义 junit 依赖，造成了重复。可以将 junit 依赖声明在统一的父模块中，模块 A 和 B 都继承自父模块，自身就无需定义 junit 依赖了。
+
+父模块只有一个 `pom.xml` 文件，且坐标中的 `packaging` 元素固定为 `pom`。在子模块中通过 `parent` 元素声明继承关系：
+
+```xml
+<parent>
+    <artifactId>project</artifactId>
+    <groupId>com.company</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+</parent>
+```
+
+需要注意的是，Maven 默认父模块和子模块的目录结构为**主从关系**，即父模块在子模块的上一级目录。如果设定为平行关系，需要在 `parent` 元素中通过 `relativePath` 元素声明：
+
+```xml
+<parent>
+    <artifactId>project</artifactId>
+    <groupId>com.company</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../parent/pom.xml</relativePath>
+</parent>
+```
+
+Maven 的聚合模块和继承模块在概念上是独立的，但在表现形式上很相似。因此实际项目中可以将聚合模块和继承模块合二为一。
