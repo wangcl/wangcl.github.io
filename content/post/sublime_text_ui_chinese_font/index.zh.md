@@ -59,6 +59,13 @@ build:
             "font.size": 12,
         },
 
+        // 鼠标在标签页移动的提示窗
+        {
+            "class": "tool_tip_label_control",
+            "font.face": "Noto Sans Mono CJK SC",
+            "font.size": 12,
+        },
+
         // ctrl + p 命令窗口
         {
             "class": "quick_panel_label",
@@ -75,7 +82,7 @@ build:
         {
             "class": "text_line_control",
             "parents": [{"class": "panel_control"}],
-            "font.size": 9,
+            "font.size": 10,
         },
 
         // 状态栏 (optional)
