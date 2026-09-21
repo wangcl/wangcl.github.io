@@ -35,6 +35,8 @@ build:
    - `Default.sublime-theme`：浅色主题
    - `Default Dark.sublime-theme`：深色主题
 
+   *如果不想手动添加，可以在当前主题下通过菜单选择 `Preferences -> Customize Theme`，会自动在上述目录下创建对应当前主题的文件。此方式也适用于安装了第三方主题*
+
 3. 手动编辑配置信息（两个文件内容相同）：
 
    *中文使用 `Noto Sans Mono CJK SC` 仅仅是因为它有标准的英文名称*
