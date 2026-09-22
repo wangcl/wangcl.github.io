@@ -8,8 +8,6 @@ categories:
 tags:
     - Hugo
     - Markdown
-    - 写作
-    - 多语言
 ---
 
 

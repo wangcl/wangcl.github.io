@@ -8,8 +8,6 @@ categories:
 tags:
     - Hugo
     - Markdown
-    - Writing
-    - Multilingual
 ---
 
 ## Create Your First Post
