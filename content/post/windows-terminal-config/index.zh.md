@@ -16,13 +16,17 @@ build:
 ## 环境
 - windows 11 LTSC 24H2
 - windows terminal: Microsoft.WindowsTerminal_1.24.11911.0_x64.zip
-- git portable
+- git 2.55 portable
 
 ## 说明
 以下是 windows terminal 配置中依赖的一些预装软件：
+
 1. git
+
    通过 git for windows 自带的 mingw64 环境使用 bash
+
 1. Nerd Fond
+
    为使用 oh my posh，需要安装一款支持 Nerd Font 的字体
 
 ## 配置 git
@@ -89,7 +93,9 @@ winget install JanDeDobbeleer.OhMyPosh --source winget
 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.deinstall.ps1'))
 ```
 
-经查，默认安装在以下位置：`C:/Program Files/WindowsApps/ohmyposh.cli_31.3.0.0_x64__96v55e8n804z4`
+*LTSC 版本默认未自带 winget，这里使用手动安装*
+
+默认安装在以下位置：`C:/Program Files/WindowsApps/ohmyposh.cli_31.3.0.0_x64__96v55e8n804z4`
 ### 配置
 在 `.bashrc` 中增加 oh-my-posh 的初始化设置：
 
