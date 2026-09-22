@@ -3,7 +3,7 @@ title: "Kotlin 和 Java 语法比较"
 description: 比较 Kotlin 和 Java 语法层面的主要差异
 date: 2026-08-24
 categories:
-    - Tech
+    - 编程
 tags:
     - kotlin
 math: false

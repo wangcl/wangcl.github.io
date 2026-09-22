@@ -5,7 +5,7 @@ date: 2026-09-11T09:49:17+08:00
 lastmod: 2026-09-13
 math: false
 categories:
-    - Tech
+    - 科技
 tags:
     - Hugo
     - Stack
@@ -34,15 +34,15 @@ build:
      
    - `languages.toml`
      - `title`
-    
+   
    - `menu.zh.toml` | `menu.en.toml`
      - `social.url`
      
    - `params.toml`
      - `footer.since`
-    
+   
      - `footer.launchDate`
-    
+   
    - `params.en.toml` | `params.zh.toml`
      - `favicon`(optional)
      - `footer.customText`
