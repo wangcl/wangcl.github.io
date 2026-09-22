@@ -134,6 +134,12 @@ Sublime Merge UI 部分的字体不能直接通过 `Preferences -> Font Face` �
         "class": "label_control",
         "font.face": "Noto Sans Mono CJK SC",
     },
+    
+    // ctrl + p Command Palette
+    {
+        "class": "quick_panel_label",
+        "font.face": "Consolas",
+    },
 ]
 ```
 
