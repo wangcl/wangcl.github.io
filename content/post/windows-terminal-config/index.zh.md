@@ -8,7 +8,7 @@ tags:
     - terminal
 math: false
 comments: false
-draft: true
+draft: false
 build:
     list: always
 ---
