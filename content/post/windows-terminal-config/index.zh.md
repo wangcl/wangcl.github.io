@@ -20,14 +20,8 @@ build:
 
 ## 说明
 以下是 windows terminal 配置中依赖的一些预装软件：
-
-1. git
-
-   通过 git for windows 自带的 mingw64 环境使用 bash
-
-1. Nerd Fond
-
-   为使用 oh my posh，需要安装一款支持 Nerd Font 的字体
+- git：通过 git for windows 自带的 mingw64 环境使用 bash
+- Nerd Fond：为使用 oh my posh，需要安装一款支持 Nerd Font 的字体
 
 ## 配置 git
 - 为在命令行直接使用 git 命令，将 `D:\Apps\git\cmd` 加入环境变量 `PATH`
@@ -48,7 +42,7 @@ build:
   git config --global core.pager "less -r"
   ```
 
-*假定 git 安装于 `D:\Apps\git`*
+> git 安装于 `D:\Apps\git`
 
 ## 增加 git bash 窗口
 1. 在 windows terminal 主界面，点击标题栏的向下箭头图标，选择 "Settings"（或使用快捷键 `ctrl + ,`）
@@ -64,6 +58,7 @@ build:
     - Font face: 选择支持 Nerd Font 的字体
 
 ![windows terminal profile](profile.png)
+
 ![appearance](appearance.png)
 
 ## 配置 git bash 环境
@@ -93,9 +88,9 @@ winget install JanDeDobbeleer.OhMyPosh --source winget
 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://ohmyposh.deinstall.ps1'))
 ```
 
-*LTSC 版本默认未自带 winget，这里使用手动安装*
+> windows LTSC 版本默认未自带 winget，这里使用手动安装
 
-默认安装在以下位置：`C:/Program Files/WindowsApps/ohmyposh.cli_31.3.0.0_x64__96v55e8n804z4`
+> 默认安装在以下位置：`C:/Program Files/WindowsApps/ohmyposh.cli_31.3.0.0_x64__96v55e8n804z4`
 ### 配置
 在 `.bashrc` 中增加 oh-my-posh 的初始化设置：
 
@@ -103,7 +98,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 eval "$(oh-my-posh init bash --config 'C:/Program Files/WindowsApps/ohmyposh.cli_31.3.0.0_x64__96v55e8n804z4/themes/gruvbox.omp.json')"
 ```
 
-*代码中指定一个自己喜好的主题（这里选择了 gruvbox ），修改主题也需要修改此代码*
+> 代码中指定一个自己喜好的主题（这里选择了 gruvbox ），修改主题也需要修改此代码*
 ### 显示效果
 ![oh my posh](oh-my-posh.png)
 
@@ -117,7 +112,7 @@ eval "$(oh-my-posh init bash --config 'C:/Program Files/WindowsApps/ohmyposh.cli
 
 ![Command](command.png)
 
-*注意 Command 项的数值数据最后的 `"%1"` 必须带有双引号，以便支持带有空格的目录名*
+> 注意 Command 项的数值数据最后的 `"%1"` 必须带有双引号，以便支持带有空格的目录名
 
 ## 完成
 现在可以在 windows terminal 中使用 git bash 窗口，开启了 oh my posh 的效果。
