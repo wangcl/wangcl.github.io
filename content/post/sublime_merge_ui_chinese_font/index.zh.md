@@ -6,7 +6,7 @@ lastmod: 2026-09-13
 math: false
 comments: false
 categories:
-    - 工具
+    - 科技
 tags:
     - sublime
 draft: false

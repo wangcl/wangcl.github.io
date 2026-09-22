@@ -3,7 +3,7 @@ title: "将 sublime text 添加到鼠标右键菜单"
 description: 描述如何将 sublime text 添加到文件的鼠标右键菜单，方便使用 sublime_text.exe 打开指定文件
 date: 2017-09-18
 categories:
-    - 工具
+    - 科技
 tags:
     - sublime
 math: false
