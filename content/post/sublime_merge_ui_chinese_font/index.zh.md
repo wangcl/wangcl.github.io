@@ -56,6 +56,10 @@ Sublime Merge UI 部分的字体不能直接通过 `Preferences -> Font Face` �
         "class": "location_bar_heading", // One of the "Branches", "Remotes", "Tags", "Stashes" or "Submodules" headings in the sidebar
         "case": "upper",
     },
+    {
+        "class": "location_bar_label",
+        "font.face": "Noto Sans Mono CJK SC",
+    },
 
     // Files view:
     {
