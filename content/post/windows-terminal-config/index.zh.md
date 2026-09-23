@@ -98,15 +98,15 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 eval "$(oh-my-posh init bash --config 'C:/Program Files/WindowsApps/ohmyposh.cli_31.3.0.0_x64__96v55e8n804z4/themes/gruvbox.omp.json')"
 ```
 
-> 代码中指定一个自己喜好的主题（这里选择了 gruvbox ），修改主题也需要修改此代码*
+> 代码中指定一个自己喜好的主题（这里选择了 gruvbox ），修改主题也需要修改此代码
 ### 显示效果
 ![oh my posh](oh-my-posh.png)
 
-> 安装方式请参考: [oh my posh 官方文档](https://ohmyposh.dev/)
+> 安装方式请参考 [oh my posh 官方文档](https://ohmyposh.dev/)
 
 ## 添加至鼠标右键菜单
 
-在注册表编辑器的 `HKEY_CLASSES_ROOT -> Folder -> shell` 条目中增加 `Terminal`(任意命名，对应鼠标右键的菜单项名称)
+在注册表编辑器的 `HKEY_CLASSES_ROOT -> Folder -> shell` 条目中增加 `Terminal`(任意命名，对应鼠标右键的菜单项名称)。在资源管理器的目录上或目录中的空白处鼠标右击，显示出 `Terminal` 菜单，点击即可打开 windows terminal，目录即为选定目录或资源管理器当前目录。
 
 ![Icon](icon.png)
 
