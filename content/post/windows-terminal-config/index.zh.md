@@ -98,8 +98,16 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 eval "$(oh-my-posh init bash --config 'C:/Program Files/WindowsApps/ohmyposh.cli_31.3.0.0_x64__96v55e8n804z4/themes/gruvbox.omp.json')"
 ```
 
-> 代码中指定一个自己喜好的主题（这里选择了 gruvbox ），修改主题也需要修改此代码
+代码中指定一个自己喜好的主题（这里选择了 gruvbox ），修改主题也需要修改此代码。
+
+> `--config` 后的主题如果使用绝对路径，oh my posh 自动更新时此路径会发生变化，导致失效。这里建议修改成仅使用主题名称：
+
+```bash
+eval "$(oh-my-posh init bash --config 'gruvbox')"
+```
+
 ### 显示效果
+
 ![oh my posh](oh-my-posh.png)
 
 > 安装方式请参考 [oh my posh 官方文档](https://ohmyposh.dev/)
