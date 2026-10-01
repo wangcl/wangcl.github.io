@@ -29,16 +29,19 @@ build:
 - 为在 git 命令行中正常显示中文，git config 增加以下配置（可删除注释）：
 
   ```shell
-  # 1. 允许 Git 在 core.quotepath 中正确显示超过 ASCII 编码的汉字文件名
+  # 1. 防止 Git 对非 ASCII 字符（如中文文件名、特殊符号）的路径进行转义和加双引号，直接原样输出文件名
   git config --global core.quotepath false
   
-  # 2. 强制 Git 内部日志输出采用 UTF-8 编码
+  # 2. 规定 Git 自带的图形界面工具（如 git gui 或 gitk）在显示文本、代码差异（Diff）时所使用的默认编码
   git config --global gui.encoding utf-8
   
-  # 3. 让 Git 提交信息（commit message）也采用 UTF-8 编码
+  # 3. 让 Git 提交信息（commit message）采用 UTF-8 编码
   git config --global i18n.commitencoding utf-8
+
+  # 4. 规定 Git 在输出日志（git log）时，日志文本使用 UTF-8 编码
+  git config --global i18n.logoutputencoding utf-8
   
-  # 4. 如果运行上述命令后，只有在翻页（显示 (END) 或进入长日志状态）时才会出现中文乱码，这是因为 Git 的分页器（Pager，默认是 less）没有被告知如何读取 UTF-8 字符
+  # 5. 如果运行上述命令后，只有在翻页（显示 (END) 或进入长日志状态）时才会出现中文乱码，这是因为 Git 的分页器（Pager，默认是 less）没有被告知如何读取 UTF-8 字符
   # 这里的 -r 或 -R 参数可以让 less 分页器原生渲染带有 ANSI 彩色和 UTF-8 中文字符的信息，而不会强制将其转义为十六进制。
   git config --global core.pager "less -r"
   ```
