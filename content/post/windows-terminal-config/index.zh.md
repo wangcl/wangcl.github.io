@@ -2,7 +2,7 @@
 title: "windows terminal 配置"
 description: 描述如何对 windows terminal 进行常见配置
 date: 2026-09-22T19:59:07+08:00
-lastmod: 2026-09-29
+lastmod: 2026-10-01
 categories:
     - 科技
 tags:
@@ -57,6 +57,8 @@ build:
   - Additional settings -> Appearance
     - Color scheme: 选择配色方案
     - Font face: 选择支持 Nerd Font 的字体
+
+> git for windows 从 `2.56` 版本起，`/mingw64` 目录变为了 `/ucrt64`。Icon 图标的路径需要相应调整。
 
 ![windows terminal profile](profile.png)
 
