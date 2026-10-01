@@ -12,7 +12,7 @@ tags:
 
 
 
-> 💡**说明：**本篇博文保留了 hugo-stack-starter 的在线预览 (Live Demo)中的原始博文[《创建第一篇文章》](https://liu-houliang.github.io/hugo-stack-starter/post/start-writing/)，仅用于新建博文时的语法参考。
+> 💡**说明：** 本篇博文保留了 hugo-stack-starter 的在线预览 (Live Demo)中的原始博文[《创建第一篇文章》](https://liu-houliang.github.io/hugo-stack-starter/post/start-writing/)，仅用于新建博文时的语法参考。
 
 ## 创建第一篇文章
 
