@@ -34,7 +34,7 @@ build:
 Fork 发布正式版本并开始收费，转到 GitAhead
 {{< /timeline-item >}}
 {{< timeline-item date="2021-09" >}}
-Sublime Text 的开发商发布了 Sublime Merge，尝鲜体验。
+使用 Sublime Merge
 {{< /timeline-item >}}
 {{< timeline-item date="2022-08" >}}
 GitAhead 更新频率大幅放缓，转到新的 Fork 产品 Gittyup
@@ -65,7 +65,7 @@ Rust 现代 Git 客户端
 
 `Fork` 大约 2016 年 4 月开始发布，当时一直处于 beta 阶段，正在全力开发过程中。已完成功能基本稳定，并且可以免费使用（其实也是公开测试）。我很喜欢 `Fork`，日常使用很顺手。
 
-然而免费终有结束的一天。大约 2020 年初，`Fork` 发布了 `1.0` 正式版，也宣告免费时代的结束。我必须使用其他替代产品了。
+然而免费终有结束的一天。大约 2020 年初，`Fork` 发布了 `1.0` 正式版，也宣告免费时代的结束。必须寻找其他替代产品了。
 
 #### GitAhead 时期
 
@@ -75,7 +75,7 @@ Rust 现代 Git 客户端
 
 我本以为大厂背景的产品可持续性要更强，然而事实是残酷的。`GitAhead` 在 2020 年 7 月发布了 `2.6.3` 版本后，很长一段时间没有新版本发布。开发者发文称自己没有多少时间投入到这个开源项目中（听起来感觉公司也没有支持他投入精力到这个开源项目）。`GitAhead` 的前景看起来一片灰暗，同时开始有开发者对仓库进行 fork 操作。2023 年 12 月 `GitAhead` 进行了 2 次回光返照式的更新，发布了 `2.7.0` 和 `2.7.1` 版本。这两个版本主要是废弃了一些旧架构的支持，升级了部分依赖包的版本，修复了一些问题，并没有大的变化。
 
-`GitAhead` 在之后一段时间没有任何变化，最终大约 2025 年 3 月在 github 上进行了归档操作，宣告自身生命周期的结束。
+`GitAhead` 在之后一段时间没有任何变化，最终大约 2025 年 3 月在 GitHub 上进行了归档操作，宣告自身生命周期的结束。
 
 从使用者的角度，`GitAhead` 是一款很出色的产品。可惜没有资源投入，终究是走到了尽头。很可惜。
 
@@ -91,23 +91,23 @@ Rust 现代 Git 客户端
 
 #### Sublime Merge 时期
 
-`Sublime Merge` 是 Sublime Text 的开发商 © [Sublime HQ Pty Ltd](https://www.sublimehq.com/) 推出的新产品，界面风格与 `Sublime Text` 类似。作为 `Sublime Text` 用户，一定也是要安装体验的。我记得是从 `1.0` 版本就开始使用了，时间可能是 2020 年之前。不过因为不是开源产品，一直是私下个人使用。
+`Sublime Merge` 是大名鼎鼎的 `Sublime Text` 的开发商 © [Sublime HQ Pty Ltd](https://www.sublimehq.com/) 推出的新产品，界面与 `Sublime Text` 类似。作为 `Sublime Text` 用户，一定也是要安装体验的。我记得是从 1.0 版本就安装了，时间大概是 2020 年之前。不过因为不是开源产品，一直是私下个人使用。初期仅仅是尝鲜体验，大约 2021 年作为个人主要使用工具（工作中使用 GitAhead -> Gittyup）。
 
-`Sublime Merge` 的界面风格与 `Gittyup` 也是比较类似的，还有 `Sublime Text` 标志性的 Command Palette。整体还是比较好上手的：
+`Sublime Merge` 的界面风格与 `Gittyup` 比较类似，还有 `Sublime Text` 标志性的 Command Palette。整体比较好上手：
 
 ![Sublime Merge](sublimemerge.png)
 
 `Sublime Merge` 有与 `Sublime Text` 类似的问题：UI 区对中文支持不好。中文可以显示，但是不知道字体如何渲染的，显示效果非常糟糕。必须通过额外处理明确指定中文字体才能解决。
 
-另外，与 `Sublime Text` 不同的是，它没有 Package Control，也没有丰富的第三方主题（GitHub 上目前貌似只有 `dracula` 和 `meetio` 主题）。默认的 `Dark` 主题是付费版本才能使用。
+另外，与 `Sublime Text` 不同的是，它没有 Package Control，也没有丰富的第三方主题（GitHub 上貌似只有 `dracula` 和 `meetio` 主题）。默认的 `Dark` 主题需要**付费版本**才能解锁使用。
 
-Sublime HQ 本身是个澳大利亚的小公司，`Sublime Text` 这个产品还是非常出色的。`Sublime Merge` 的付费版本我相信销量可能不如 `Sublime Text`，网络上一些国外网友留言“不会为一个 Dark 主题付 99 刀”。但是 Sublime HQ 的两个产品全部可以免费使用（会不定时弹出付费通知），还是很良心的。
+Sublime HQ 本身是个澳大利亚的小公司，`Sublime Text` 这个产品还是非常出色的，也非常流行。`Sublime Merge` 的付费版本我相信销量可能远不如 `Sublime Text`，网络上一些国外网友留言“不会为一个 Dark 主题付 99 刀”。但是 Sublime HQ 的两个产品全部可以免费使用（会不定时弹出付费通知），还是很良心的。
 
 `Sublime Merge` 是一直在使用的产品，但没有付费。
 
 #### SourceGit 时期
 
-使用 `SourceGit` 大约是 2025 年了。因为 `Gittyup 2.0` 没有 Windows 版的问题，需要找一个开源替代。又因为 Rust 的兴起，想找一个 Rust 开发的产品，`SourceGit` 出现在了视野。
+使用 `SourceGit` 大约是 2025 年了。因为 `Gittyup 2.0` 没有 Windows 版的问题，需要找一个开源替代。又因为 Rust 的日益流行，想找一个 Rust 开发的产品，`SourceGit` 出现在了视野。
 
 `SourceGit` 的界面风格与 `GitAhead` 也是类似的，只不过 3 个区域位于 2 个不同的标签中：
 
@@ -117,9 +117,9 @@ Sublime HQ 本身是个澳大利亚的小公司，`Sublime Text` 这个产品还
 
 #### 附：其他小众产品
 
-让 AI 推荐非 Electron 和 Qt 技术，Rust 开发的 git gui client，AI 推荐了 2 个：
+让 AI 推荐非 Electron 和 Qt 技术，优先 Rust 开发的 Git 图形客户端，AI 推荐了 2 个：
 
-1. `AngkorGit`
+1. AngkorGit
 
   是个柬埔寨小伙的作品，Angkor 指的是“吴哥窟”。现在是 `0.x` 的预览阶段，开发活跃度比较高。默认还有 AI 集成接口。只是个人作品不知道可持续性如何。
 
@@ -127,6 +127,6 @@ Sublime HQ 本身是个澳大利亚的小公司，`Sublime Text` 这个产品还
 
   感觉界面风格还是挺现代的，速度快，资源占用少。
 
-2. `GitButler`
+2. GitButler
 
   严格说这不是个传统的“Git 图形客户端”，它的卖点是自身开创的 Git 工作流。不是我关注的点，因此没有安装体验。背靠商业公司，据说已拿过风险投资，感觉可持续性应该强得多。
