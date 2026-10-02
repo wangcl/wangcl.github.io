@@ -62,6 +62,18 @@ build:
    
    - 删除 `content/post/` 中的原有博文
 
+   - `content/categories`
+
+     新增“分类”：
+
+     1. 复制原有的 `Tutorial` 目录为新的分类目录，修改目录名为新的分类名（博文中的 categories 中使用这个名称）
+
+     2. 进入目录，修改 `_index.zh.md` 和 `_index.en.md` 文件中的：
+
+       - `title`：首页博文卡片上分类图标中显示的文字
+       - `description`：“归档”页中，点击分类卡片，在 title 下显示的描述文字
+       - `style.background`：首页博文卡片上分类图标的颜色（*虽然 hugo 会自动生成颜色，但可能会重复，建议使用自定义颜色*）
+
 ## 其他修改(optional)
 
 1. Hugo 版本升级涉及修改
