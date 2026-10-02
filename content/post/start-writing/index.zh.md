@@ -4,7 +4,6 @@ description: "学习如何创建第一篇博客文章，掌握 Markdown 基本�
 date: 2026-04-12
 lastmod: 2026-04-23
 categories:
-    - Tutorial
 tags:
     - Hugo
     - Markdown
