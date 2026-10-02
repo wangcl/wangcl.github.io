@@ -3,7 +3,7 @@ title: "Git 图形客户端使用历程"
 description: 个人历年使用的 git 图形客户端及使用体验
 date: 2026-10-01T18:33:28+08:00
 categories:
-    - 随笔
+    - Essays
 tags:
     - git
 math: false
