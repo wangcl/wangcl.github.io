@@ -3,7 +3,7 @@ title: "Maven 基础"
 description: Maven 基础知识入门
 date: 2015-03-10
 categories:
-    - 编程
+    - Code
 tags:
     - maven
 math: false
