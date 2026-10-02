@@ -4,7 +4,7 @@ description: 描述如何对 windows terminal 进行常见配置
 date: 2026-09-22T19:59:07+08:00
 lastmod: 2026-10-01
 categories:
-    - 科技
+    - Tech
 tags:
     - terminal
 math: false

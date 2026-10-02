@@ -5,7 +5,7 @@ date: 2026-09-11T09:49:17+08:00
 lastmod: 2026-09-13
 math: false
 categories:
-    - 科技
+    - Tech
 tags:
     - Hugo
     - Stack

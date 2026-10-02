@@ -6,7 +6,7 @@ lastmod: 2026-09-13
 math: false
 comments: false
 categories:
-    - 科技
+    - Tech
 tags:
     - sublime
 draft: false
