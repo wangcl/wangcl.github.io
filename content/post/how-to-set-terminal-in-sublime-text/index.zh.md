@@ -1,6 +1,6 @@
 ---
-title: "如何设置 Sublime Text 中的终端应用"
-description: 如何将 Sublime Text (3213+) 中的终端应用绑定到 Windows Terminal 或者 Alacritty
+title: "设置 Sublime Text 中的终端应用"
+description: 描述如何将 Sublime Text (3213+) 中的终端应用绑定到 Windows Terminal 或者 Alacritty
 date: 2026-10-03T14:33:03+08:00
 lastmod: 
 categories:
