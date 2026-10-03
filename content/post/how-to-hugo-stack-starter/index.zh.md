@@ -1,5 +1,5 @@
 ---
-title: "How-To: Hugo Stack Starter"
+title: "使用 Hugo Stack Starter 模板搭建个人主页"
 description: 使用 Hugo Stack Starter Template 在 Github Pages 上发布个人主页
 date: 2026-09-11T09:49:17+08:00
 lastmod: 2026-09-13
