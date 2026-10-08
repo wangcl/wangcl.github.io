@@ -97,6 +97,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 > windows LTSC 版本默认未自带 winget，这里使用手动安装
 
 > 默认安装在以下位置：`C:/Program Files/WindowsApps/ohmyposh.cli_31.3.0.0_x64__96v55e8n804z4`
+
 ### 配置
 在 `.bashrc` 中增加 oh-my-posh 的初始化设置：
 
@@ -106,11 +107,17 @@ eval "$(oh-my-posh init bash --config 'C:/Program Files/WindowsApps/ohmyposh.cli
 
 代码中指定一个自己喜好的主题（这里选择了 gruvbox ），修改主题也需要修改此代码。
 
-> `--config` 后的主题如果使用绝对路径，oh my posh 自动更新时此路径会发生变化，导致失效。这里建议修改成仅使用主题名称：
+> `--config` 后的主题如果使用绝对路径，oh my posh 自动更新时此路径会发生变化，导致失效。
+
+也可以仅使用主题名称：
 
 ```bash
 eval "$(oh-my-posh init bash --config 'gruvbox')"
 ```
+
+> 按照官网描述，仅指定主题名称，oh my posh 会联网获取主题而不是从本地读取。联网动作是基于会话的。
+
+> 为了防止每次启动会话 oh my posh 联网获取主题，我将主题文件夹 `themes` 复制了一份到指定路径，然后在 `--config` 中使用了绝对路径。遗留问题是如果主题更新了，复制的主题未能自动更新。oh my posh 还是应该提供 exe 或者 zip 安装包，这样不受限制。
 
 ### 显示效果
 
