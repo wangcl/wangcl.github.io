@@ -4,6 +4,7 @@ description: "Learn how to create your first blog post, master basic Markdown sy
 date: 2026-04-12
 lastmod: 2026-04-23
 categories:
+    - Life
 tags:
     - Hugo
     - Markdown
