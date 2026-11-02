@@ -6,7 +6,7 @@ lastmod:
 categories:
     - Life
 tags:
-    - email
+    - Email
 image: 
 math: false
 license: 

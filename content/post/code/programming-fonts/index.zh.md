@@ -7,7 +7,7 @@ math: false
 categories:
     - Code
 tags:
-    - font
+    - Font
 comments: false
 draft: false
 build:

@@ -6,7 +6,7 @@ lastmod: 2026-11-02
 categories:
     - Tech
 tags:
-    - terminal
+    - Terminal
 math: false
 comments: false
 draft: false

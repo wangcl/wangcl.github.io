@@ -6,7 +6,7 @@ lastmod:
 categories:
     - Life
 tags:
-    - keyboard
+    - Keyboard
 math: false
 comments: false
 draft: false

@@ -5,7 +5,7 @@ date: 2026-10-01T18:33:28+08:00
 categories:
     - Essays
 tags:
-    - git
+    - Git
 math: false
 comments: false
 draft: false

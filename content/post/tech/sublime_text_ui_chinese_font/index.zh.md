@@ -5,7 +5,7 @@ date: 2026-09-13T19:53:42+08:00
 categories:
     - Tech
 tags:
-    - sublime
+    - Sublime
 math: false
 comments: false
 draft: false

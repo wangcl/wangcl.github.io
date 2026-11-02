@@ -8,7 +8,7 @@ comments: false
 categories:
     - Tech
 tags:
-    - sublime
+    - Sublime
 draft: false
 build:
     list: always

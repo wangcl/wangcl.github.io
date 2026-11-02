@@ -6,7 +6,7 @@ lastmod:
 categories:
     - Tech
 tags:
-    - sublime
+    - Sublime
 math: false
 comments: false
 draft: false

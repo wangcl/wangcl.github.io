@@ -6,7 +6,8 @@ lastmod:
 categories:
     - Life
 tags:
-    - bayern
+    - Bayern
+    - Soccer
 math: false
 comments: false
 draft: false

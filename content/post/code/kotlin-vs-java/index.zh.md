@@ -5,7 +5,7 @@ date: 2026-08-24
 categories:
     - Code
 tags:
-    - kotlin
+    - Kotlin
 math: false
 comments: false
 draft: false

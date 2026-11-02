@@ -6,7 +6,6 @@ lastmod:
 categories:
     - Life
 tags:
-    - 
 math: false
 comments: false
 draft: false

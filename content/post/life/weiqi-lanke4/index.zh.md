@@ -6,7 +6,7 @@ lastmod:
 categories:
   - Life
 tags:
-  - weiqi
+  - Weiqi
 math: false
 comments: false
 draft: false

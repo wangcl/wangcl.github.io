@@ -6,7 +6,7 @@ lastmod:
 categories:
     - Tech
 tags:
-    - wsl
+    - Wsl
 math: false
 comments: false
 draft: false
