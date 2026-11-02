@@ -2,7 +2,7 @@
 title: "windows terminal 配置"
 description: 描述如何对 windows terminal 进行常见配置
 date: 2026-09-22T19:59:07+08:00
-lastmod: 2026-10-01
+lastmod: 2026-11-02
 categories:
     - Tech
 tags:
@@ -138,3 +138,20 @@ eval "$(oh-my-posh init bash --config 'gruvbox')"
 ## 完成
 现在可以在 windows terminal 中使用 git bash 窗口，开启了 oh my posh 的效果。
 如果需要把 git bash 作为默认窗口，打开 windows terminal 的 settings 窗口，点击左下角的图标打开对应的 json 文件，编辑 `"defaultProfile": "{}"`，填入 `profiles.list` 中 git bash 对应的 `guid` 值。
+
+## 优化
+
+### 用 eza 代替 ls
+
+1. 访问 eza 的 github 网址 [eza](https://github.com/eza-community/eza)，下载最新版本
+2. 将 `eza.exe` 所在路径加入 `Path` 环境变量
+3. 设置别名用 eza 代替 ls:
+   修改 `~/.bashrc`:
+   ```bash
+   if command -v eza &> /dev/null; then
+       # 基础查看：带有图标，且文件夹置顶
+       alias ls='eza --no-permissions --no-user --icons --group-directories-first'
+   else
+       # 让 ls 命令完美显示中文文件名和颜色
+       alias ls='ls --show-control-chars --color=auto' 
+   ```
